@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -489,7 +489,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1354141926}
-  m_PlaneDistance: 15
+  m_PlaneDistance: 4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -574,7 +574,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 15
+  near clip plane: 1
   far clip plane: 200
   field of view: 60
   orthographic: 0
@@ -885,4 +885,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10573cf606ee7054382e005b47bdffda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 8347060980724687861, guid: 3a4f316b95733df44aa9889a75bf6598, type: 3}
+  torre: {fileID: 8347060980724687861, guid: 3a4f316b95733df44aa9889a75bf6598, type: 3}

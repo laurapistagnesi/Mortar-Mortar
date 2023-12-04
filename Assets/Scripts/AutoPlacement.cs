@@ -6,13 +6,12 @@ using UnityEngine.XR.ARSubsystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
 {
-    //[SerializeField] private GameObject[] towers;
     private ARRaycastManager aRRaycastManager;
+    private bool torrePosizionata = false;
+    [SerializeField] private GameObject torre;
+    private float distanzaMinima = 3.0f;
 
-    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
-
-    private bool towerPlaced = false;
-    [SerializeField] private GameObject tower;
+    static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
 
     private void Awake()
     {
@@ -21,17 +20,25 @@ public class AutoPlacement : MonoBehaviour
 
     void Update()
     {
-        if (!towerPlaced && aRRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.PlaneWithinPolygon))
+        if (!torrePosizionata && aRRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hitList, TrackableType.PlaneWithinPolygon))
         {
-            Pose hitPose = hits[0].pose;
+            Pose hitPose = hitList[0].pose;
 
-            //GameObject tower = towers[Menu.currentTowerIndex];
-            tower.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-            tower.transform.position = new Vector3(hitPose.position.x, hitPose.position.y, hitPose.position.z);
-            tower.transform.rotation = hitPose.rotation;
-            Instantiate(tower);
+            float distanzaDallaTelecamera = Vector3.Distance(Camera.main.transform.position, hitPose.position);
 
-            towerPlaced = true;
+            if (distanzaDallaTelecamera >= distanzaMinima)
+            {
+                torre.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+                torre.transform.position = new Vector3(hitPose.position.x, hitPose.position.y, hitPose.position.z);
+                torre.transform.rotation = hitPose.rotation;
+                Instantiate(torre);
+
+                torrePosizionata = true;
+            }
+            else
+            {
+                Debug.Log("La torre è troppo vicina alla camera.");
+            }
         }
     }
 }
