@@ -8,8 +8,8 @@ public class AutoPlacement : MonoBehaviour
 {
     private ARRaycastManager aRRaycastManager;
     private bool torrePosizionata = false;
-    [SerializeField] private GameObject torre;
     private float distanzaMinima = 3.0f;
+    [SerializeField] private GameObject[] towers;
 
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
 
@@ -28,6 +28,7 @@ public class AutoPlacement : MonoBehaviour
 
             if (distanzaDallaTelecamera >= distanzaMinima)
             {
+                GameObject torre = towers[Menu.currentTowerIndex];
                 torre.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
                 torre.transform.position = new Vector3(hitPose.position.x, hitPose.position.y, hitPose.position.z);
                 torre.transform.rotation = hitPose.rotation;

@@ -1,30 +1,23 @@
-Unity Editor version:    2022.3.0f1 (fb119bb0b476)
-Branch:                  2022.3/release
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 14.1.1 (Build 23B81)
-Darwin version:          23.1.0
-Architecture:            arm64
-Running under Rosetta:   NO
-Available memory:        16384 MB
 Using pre-set license
-Pro License: YES
+Built from '2022.3/release' branch; Version is '2022.3.0f1 (fb119bb0b476) revision 16454043'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'it' Physical Memory: 7069 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/alexdediu/git-projects/Mortar-Mortar
+C:/Users/Laura/source/repos/Mortar-Mortar
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54477
-Successfully changed project path to: /Users/alexdediu/git-projects/Mortar-Mortar
-/Users/alexdediu/git-projects/Mortar-Mortar
+64035
+Successfully changed project path to: C:/Users/Laura/source/repos/Mortar-Mortar
+C:/Users/Laura/source/repos/Mortar-Mortar
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,86 +49,81 @@ Successfully changed project path to: /Users/alexdediu/git-projects/Mortar-Morta
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8136466112] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1486192616 [EditorId] 1486192616 [Version] 1048832 [Id] OSXEditor(0,Alexs-Air.station) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12364] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 1045699665 [EditorId] 1045699665 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GHLI4CG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8136466112] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1486192616 [EditorId] 1486192616 [Version] 1048832 [Id] OSXEditor(0,Alexs-Air.station) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12364] Host "[IP] 192.168.1.3 [Port] 0 [Flags] 2 [Guid] 1045699665 [EditorId] 1045699665 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GHLI4CG2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 22.64 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2614.01 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.0f1 (fb119bb0b476)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/alexdediu/git-projects/Mortar-Mortar/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Laura/source/repos/Mortar-Mortar/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 (high power)
-Metal devices available: 1
-0: Apple M1 (high power)
-Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Mobile Graphics (ID=0x15dd)
+    Vendor:   ATI
+    VRAM:     3534 MB
+    Driver:   23.20.815.6144
 Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56201
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.004429 seconds.
-- Loaded All Assemblies, in  0.239 seconds
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for iOS target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.040149 seconds.
+- Loaded All Assemblies, in  1.738 seconds
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 76 ms
-Native extension for OSXStandalone target not found
+Android Extension - Scanning For ADB Devices 3501 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.324 seconds
-Domain Reload Profiling: 563ms
-	BeginReloadAssembly (75ms)
+- Finished resetting the current domain, in  5.429 seconds
+Domain Reload Profiling: 7161ms
+	BeginReloadAssembly (590ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (100ms)
-		LoadAssemblies (75ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (139ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (269ms)
+	LoadAllAssembliesAndSetupDomain (695ms)
+		LoadAssemblies (575ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (97ms)
-				TypeCache.ScanAssembly (89ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (325ms)
+		AnalyzeDomain (664ms)
+			TypeCache.Refresh (660ms)
+				TypeCache.ScanAssembly (618ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (5432ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (289ms)
+		SetupLoadedEditorAssemblies (5173ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (211ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (4404ms)
+			SetLoadedEditorAssemblies (15ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (51ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (512ms)
+			ProcessInitializeOnLoadMethodAttributes (233ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.597 seconds
-Refreshing native plugins compatible for Editor in 3.91 ms, found 4 plugins.
-Native extension for iOS target not found
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  9.878 seconds
+Refreshing native plugins compatible for Editor in 83.25 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -147,164 +135,102 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.506 seconds
-Domain Reload Profiling: 1105ms
-	BeginReloadAssembly (76ms)
+- Finished resetting the current domain, in  4.618 seconds
+Domain Reload Profiling: 14472ms
+	BeginReloadAssembly (564ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (468ms)
-		LoadAssemblies (220ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (131ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (151ms)
+	LoadAllAssembliesAndSetupDomain (8974ms)
+		LoadAssemblies (7428ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (277ms)
-			TypeCache.Refresh (251ms)
-				TypeCache.ScanAssembly (241ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (506ms)
+		AnalyzeDomain (1714ms)
+			TypeCache.Refresh (1522ms)
+				TypeCache.ScanAssembly (1452ms)
+			ScanForSourceGeneratedMonoScriptInfo (136ms)
+			ResolveRequiredComponents (56ms)
+	FinalizeReload (4619ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (361ms)
+		SetupLoadedEditorAssemblies (3335ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (117ms)
+			SetLoadedEditorAssemblies (18ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (196ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (504ms)
+			ProcessInitializeOnLoadAttributes (1886ms)
+			ProcessInitializeOnLoadMethodAttributes (764ms)
+			AfterProcessingInitializeOnLoad (44ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
 Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 4.12 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
+Refreshing native plugins compatible for Editor in 72.80 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7278 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 118 unused Assets / (2.8 MB). Loaded Objects now: 7727.
-Memory consumption went from 289.8 MB to 287.0 MB.
-Total: 4.177209 ms (FindLiveObjects: 0.275459 ms CreateObjectMapping: 0.096583 ms MarkObjects: 2.973125 ms  DeleteObjects: 0.831333 ms)
+Unloading 7286 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 117 unused Assets / (2.4 MB). Loaded Objects now: 7761.
+Memory consumption went from 358.3 MB to 355.9 MB.
+Total: 356.755600 ms (FindLiveObjects: 1.830600 ms CreateObjectMapping: 1.158500 ms MarkObjects: 350.803100 ms  DeleteObjects: 2.959200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 289681.975307 seconds.
-  path: Assets/_Project/00_Scenes
-  artifactKey: Guid(6cfc38d8b2b2656419548e48f399f25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_Scenes using Guid(6cfc38d8b2b2656419548e48f399f25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da588361ff891910e9b8e4b540433473') in 0.001011 seconds
+  Time since last request: 1281072.644387 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(2b24f7fa58fce824ebcebca62c09d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(2b24f7fa58fce824ebcebca62c09d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13c2b196f46caef8bf45e7dd389b511') in 0.005116 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 8.479509 seconds.
-  path: Assets/_Project/00_Scenes/Main JD.unity
-  artifactKey: Guid(70fe7e7673b28f1479e1dece64c4f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_Scenes/Main JD.unity using Guid(70fe7e7673b28f1479e1dece64c4f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac8862d8ca1a48609def32e3a94613e') in 0.000398 seconds
+  Time since last request: 48.329865 seconds.
+  path: Assets/Project/Scripts/AutoPlacement.cs
+  artifactKey: Guid(64d69cb6cd389c24a8ad029c0a476c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Scripts/AutoPlacement.cs using Guid(64d69cb6cd389c24a8ad029c0a476c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e73ab575d0bf8d527f4c12a9e6bd6d') in 0.003207 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.898268 seconds.
-  path: Assets/_Project/00_Scenes/Main 1.unity
-  artifactKey: Guid(803f0ce37db25534cb4b80af62cfdec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_Scenes/Main 1.unity using Guid(803f0ce37db25534cb4b80af62cfdec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743c170183d1c2b9d859d15f7c54951a') in 0.000455 seconds
+  Time since last request: 55.993752 seconds.
+  path: Assets/Scripts/AutoPlacement.cs
+  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AutoPlacement.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedfb3d15e6ed32fe94abbbd7fa4880f') in 0.007947 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 8.863880 seconds.
-  path: Assets/_Project/00_ScriptableObjects
-  artifactKey: Guid(10d7124be77672146971294132c9aed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_ScriptableObjects using Guid(10d7124be77672146971294132c9aed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7555d07aff123dd2ff1d0295169001dc') in 0.000410 seconds
+  Time since last request: 19.522087 seconds.
+  path: Assets/Scripts/AutoPlacement1.cs
+  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AutoPlacement1.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38801e9d5a53deb30c654dfbd40ed09') in 0.001695 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.067779 seconds.
-  path: Assets/_Project/00_Scenes/Editor/Prefab_Regular_Environment.unity
-  artifactKey: Guid(8c5846ac94b7817479541276052ef67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_Scenes/Editor/Prefab_Regular_Environment.unity using Guid(8c5846ac94b7817479541276052ef67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be00f76f0d00667badc02d87d215138') in 0.000406 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.802176 seconds.
-  path: Assets/_Project/00_Scenes/Editor/Prefab_Ui_Environment.unity
-  artifactKey: Guid(4c30aa4c7dc72ad4d8fedc5e7cf481ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/00_Scenes/Editor/Prefab_Ui_Environment.unity using Guid(4c30aa4c7dc72ad4d8fedc5e7cf481ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf4bdc486001815c583bbaf7ee9ab47') in 0.000476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 9.58 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.6 MB). Loaded Objects now: 7727.
-Memory consumption went from 129.8 MB to 127.2 MB.
-Total: 7.106875 ms (FindLiveObjects: 0.309084 ms CreateObjectMapping: 0.089708 ms MarkObjects: 6.035250 ms  DeleteObjects: 0.672458 ms)
-
-Prepare: number of updated asset objects reloaded= 123
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7727.
-Memory consumption went from 129.6 MB to 127.1 MB.
-Total: 3.794375 ms (FindLiveObjects: 0.224708 ms CreateObjectMapping: 0.091834 ms MarkObjects: 2.860333 ms  DeleteObjects: 0.617000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Thread 0x2a08c7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.684 seconds
-Refreshing native plugins compatible for Editor in 6.75 ms, found 4 plugins.
-Native extension for iOS target not found
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 10.090 seconds
+Refreshing native plugins compatible for Editor in 157.08 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Native extension for OSXStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -312,1267 +238,638 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.039 seconds
-Domain Reload Profiling: 1723ms
-	BeginReloadAssembly (144ms)
+- Finished resetting the current domain, in 24.886 seconds
+Domain Reload Profiling: 34949ms
+	BeginReloadAssembly (1219ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (21ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (484ms)
-		LoadAssemblies (184ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (643ms)
+	RebuildCommonClasses (167ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (254ms)
+	LoadAllAssembliesAndSetupDomain (8374ms)
+		LoadAssemblies (5151ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (332ms)
-			TypeCache.Refresh (301ms)
-				TypeCache.ScanAssembly (285ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1039ms)
+		AnalyzeDomain (3537ms)
+			TypeCache.Refresh (3277ms)
+				TypeCache.ScanAssembly (2834ms)
+			ScanForSourceGeneratedMonoScriptInfo (197ms)
+			ResolveRequiredComponents (62ms)
+	FinalizeReload (24888ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (4449ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (163ms)
+			SetLoadedEditorAssemblies (39ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (159ms)
-			ProcessInitializeOnLoadMethodAttributes (87ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (546ms)
+			ProcessInitializeOnLoadAttributes (2166ms)
+			ProcessInitializeOnLoadMethodAttributes (1479ms)
+			AfterProcessingInitializeOnLoad (55ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (71ms)
 Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 85.33 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7732.
-Memory consumption went from 247.7 MB to 245.2 MB.
-Total: 4.714708 ms (FindLiveObjects: 0.261125 ms CreateObjectMapping: 0.092125 ms MarkObjects: 3.240458 ms  DeleteObjects: 1.120208 ms)
+Unloading 7057 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7765.
+Memory consumption went from 317.9 MB to 315.5 MB.
+Total: 34.863900 ms (FindLiveObjects: 1.967600 ms CreateObjectMapping: 1.300700 ms MarkObjects: 26.453900 ms  DeleteObjects: 5.136600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 122.412441 seconds.
+  path: Assets/Scripts/AutoPlacement1.cs
+  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AutoPlacement1.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4083e05a985b4cad05c395ea82c47b34') in 0.030122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  9.929 seconds
+Refreshing native plugins compatible for Editor in 114.67 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 14.947 seconds
+Domain Reload Profiling: 24849ms
+	BeginReloadAssembly (1841ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (192ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (851ms)
+	RebuildCommonClasses (247ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (260ms)
+	LoadAllAssembliesAndSetupDomain (7489ms)
+		LoadAssemblies (5191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2808ms)
+			TypeCache.Refresh (2718ms)
+				TypeCache.ScanAssembly (1821ms)
+			ScanForSourceGeneratedMonoScriptInfo (48ms)
+			ResolveRequiredComponents (42ms)
+	FinalizeReload (14949ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2623ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (139ms)
+			SetLoadedEditorAssemblies (25ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (686ms)
+			ProcessInitializeOnLoadAttributes (1111ms)
+			ProcessInitializeOnLoadMethodAttributes (621ms)
+			AfterProcessingInitializeOnLoad (38ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
 Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 10.00 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 179.78 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7732.
-Memory consumption went from 137.5 MB to 135.0 MB.
-Total: 13.530875 ms (FindLiveObjects: 0.292333 ms CreateObjectMapping: 0.085292 ms MarkObjects: 12.455000 ms  DeleteObjects: 0.697583 ms)
+Unloading 7054 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.3 MB). Loaded Objects now: 7767.
+Memory consumption went from 317.7 MB to 315.4 MB.
+Total: 70.945400 ms (FindLiveObjects: 11.328400 ms CreateObjectMapping: 2.377600 ms MarkObjects: 18.698000 ms  DeleteObjects: 38.536300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1327.060122 seconds.
-  path: Assets/Coffee
-  artifactKey: Guid(fccf38714730a9c46a4700c6453b84e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Coffee using Guid(fccf38714730a9c46a4700c6453b84e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6900b86dcdf304cf477288d185158abd') in 0.020117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 164.904847 seconds.
-  path: Assets/Plugins
-  artifactKey: Guid(a3397ca59aa2845d9b6915a23e597665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins using Guid(a3397ca59aa2845d9b6915a23e597665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85222c704298f143decff5f31f86a978') in 0.000827 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.646868 seconds.
-  path: Assets/Rendering
-  artifactKey: Guid(7308204d35a32ea449d81c5eac9eed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering using Guid(7308204d35a32ea449d81c5eac9eed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7086cc01307bf6936f4306d449c9f5c') in 0.000408 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.654231 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(06fc3c22ddcab4949893fb2150a5a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(06fc3c22ddcab4949893fb2150a5a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ea552a57e42fd84305aa1fc2dce6d3') in 0.000461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.096472 seconds.
+  Time since last request: 511.227290 seconds.
   path: Assets/Scenes/BlankAR.unity
   artifactKey: Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BlankAR.unity using Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f515d438aa11beac64865e9ad8d54f') in 0.000442 seconds
+Start importing Assets/Scenes/BlankAR.unity using Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18123aaa5c8414fcc0086330f8e76ccd') in 0.017819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  8.525 seconds
+Refreshing native plugins compatible for Editor in 90.78 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 12.399 seconds
+Domain Reload Profiling: 20902ms
+	BeginReloadAssembly (1606ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (45ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (463ms)
+	RebuildCommonClasses (214ms)
+	RebuildNativeTypeToScriptingClass (60ms)
+	initialDomainReloadingComplete (187ms)
+	LoadAllAssembliesAndSetupDomain (6434ms)
+		LoadAssemblies (3350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (3716ms)
+			TypeCache.Refresh (3585ms)
+				TypeCache.ScanAssembly (2599ms)
+			ScanForSourceGeneratedMonoScriptInfo (82ms)
+			ResolveRequiredComponents (50ms)
+	FinalizeReload (12401ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2965ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (148ms)
+			SetLoadedEditorAssemblies (35ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (447ms)
+			ProcessInitializeOnLoadAttributes (1491ms)
+			ProcessInitializeOnLoadMethodAttributes (806ms)
+			AfterProcessingInitializeOnLoad (35ms)
+			EditorAssembliesLoaded (3ms)
+		ExecutionOrderSort2 (1ms)
+		AwakeInstancesAfterBackupRestoration (63ms)
+Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
+Refreshing native plugins compatible for Editor in 80.04 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (2.5 MB). Loaded Objects now: 7773.
+Memory consumption went from 317.9 MB to 315.4 MB.
+Total: 21.216000 ms (FindLiveObjects: 2.110700 ms CreateObjectMapping: 1.222500 ms MarkObjects: 14.245400 ms  DeleteObjects: 3.634400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 506.447915 seconds.
+  path: Assets/Scripts/02_Scripts/Signals
+  artifactKey: Guid(9d66bf3e2a72d824cb498d31f2cc3061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/02_Scripts/Signals using Guid(9d66bf3e2a72d824cb498d31f2cc3061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9304cecf4aa87cf5d75682c74e504b') in 0.050256 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 104.801413 seconds.
-  path: Assets/Scripts/AutoPlacementController.cs
-  artifactKey: Guid(bf1b72d96fad58b44b06b6529dfde668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AutoPlacementController.cs using Guid(bf1b72d96fad58b44b06b6529dfde668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e666b7e43944d8d8c1be83a7228b12d') in 0.001189 seconds
+  Time since last request: 4.402319 seconds.
+  path: Assets/Scripts/Menu.cs
+  artifactKey: Guid(4121beb9068897647b92eddc6ace4fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Menu.cs using Guid(4121beb9068897647b92eddc6ace4fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d71e53d1dbf8fd286cedbbbc0ecd71') in 0.003335 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 4.651979 seconds.
-  path: Assets/Scripts/AutoPlacement.cs
-  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AutoPlacement.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4df2e55d6c39528ed71a9de796bef1') in 0.000446 seconds
+  Time since last request: 1000.698004 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Tower1.prefab
+  artifactKey: Guid(21510805478de124e817b84d1b1e13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Tower1.prefab using Guid(21510805478de124e817b84d1b1e13f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2982701119db0103496d92d43f2ade') in 0.337975 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1173
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Laura\source\repos\Mortar-Mortar\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  9.529 seconds
+Refreshing native plugins compatible for Editor in 224.56 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 10.170 seconds
+Domain Reload Profiling: 19843ms
+	BeginReloadAssembly (3303ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (153ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (17ms)
+		CreateAndSetChildDomain (1288ms)
+	RebuildCommonClasses (200ms)
+	RebuildNativeTypeToScriptingClass (56ms)
+	initialDomainReloadingComplete (196ms)
+	LoadAllAssembliesAndSetupDomain (5915ms)
+		LoadAssemblies (3358ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2787ms)
+			TypeCache.Refresh (2519ms)
+				TypeCache.ScanAssembly (1908ms)
+			ScanForSourceGeneratedMonoScriptInfo (92ms)
+			ResolveRequiredComponents (176ms)
+	FinalizeReload (10173ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2642ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (129ms)
+			SetLoadedEditorAssemblies (30ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (446ms)
+			ProcessInitializeOnLoadAttributes (1426ms)
+			ProcessInitializeOnLoadMethodAttributes (588ms)
+			AfterProcessingInitializeOnLoad (22ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (40ms)
+Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
+Refreshing native plugins compatible for Editor in 99.17 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (2.4 MB). Loaded Objects now: 7780.
+Memory consumption went from 317.9 MB to 315.6 MB.
+Total: 22.160500 ms (FindLiveObjects: 1.812100 ms CreateObjectMapping: 1.856700 ms MarkObjects: 15.226200 ms  DeleteObjects: 3.262200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 92.776908 seconds.
+  Time since last request: 540.024863 seconds.
   path: Assets/UniversalRenderPipelineGlobalSettings.asset
   artifactKey: Guid(63e93aa0ade98c94eb37f0acaccd058e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(63e93aa0ade98c94eb37f0acaccd058e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e63607f395d8e9ed988b3795141c7f2') in 0.008964 seconds
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(63e93aa0ade98c94eb37f0acaccd058e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e63607f395d8e9ed988b3795141c7f2') in 0.064601 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 53.746898 seconds.
-  path: Assets/_Project/01_Prefabs/TowerBase.prefab
-  artifactKey: Guid(f99644b42d3ffd84a8694c1ccce7646a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/TowerBase.prefab using Guid(f99644b42d3ffd84a8694c1ccce7646a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf68df6e2c3a4cd1b6d1d2272421f88') in 0.016802 seconds
+  Time since last request: 209.911624 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Tower.prefab
+  artifactKey: Guid(133722c45f9a88446bf05027c5f4e5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Tower.prefab using Guid(133722c45f9a88446bf05027c5f4e5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbccdf08219d5a78760542658224b70') in 0.129211 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1627
+Number of asset objects unloaded after import = 1468
 ========================================================================
 Received Import Request.
-  Time since last request: 188.665089 seconds.
-  path: Assets/Scripts/AutoPlacement.cs
-  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AutoPlacement.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722912084820d6e4e69bbfecd7b96d61') in 0.001583 seconds
+  Time since last request: 148.780781 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Platform.prefab
+  artifactKey: Guid(7b9b3c1c9e01f2d4fa8dd4958d9a534a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Platform.prefab using Guid(7b9b3c1c9e01f2d4fa8dd4958d9a534a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25016cb905d12096748b691fb43d8d6b') in 0.015379 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289513000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.724 seconds
-Refreshing native plugins compatible for Editor in 3.88 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.118 seconds
-Domain Reload Profiling: 1842ms
-	BeginReloadAssembly (129ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (546ms)
-		LoadAssemblies (251ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (330ms)
-			TypeCache.Refresh (315ms)
-				TypeCache.ScanAssembly (297ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1118ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (319ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (153ms)
-			ProcessInitializeOnLoadMethodAttributes (81ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.23 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7740.
-Memory consumption went from 254.7 MB to 252.2 MB.
-Total: 5.100500 ms (FindLiveObjects: 0.288875 ms CreateObjectMapping: 0.099042 ms MarkObjects: 3.817667 ms  DeleteObjects: 0.894083 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 9.71 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7740.
-Memory consumption went from 144.6 MB to 142.0 MB.
-Total: 20.613708 ms (FindLiveObjects: 0.319375 ms CreateObjectMapping: 0.086292 ms MarkObjects: 19.517792 ms  DeleteObjects: 0.689625 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 214.428783 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(dfc44a5a7206af244b04a4e7eb849902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(dfc44a5a7206af244b04a4e7eb849902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6b537a2babc7ee96478124bb1db90e') in 0.005545 seconds
+  Time since last request: 23.814159 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Complete/Mortini.prefab
+  artifactKey: Guid(43d7196907d3db34f91bb9fd015d9df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Complete/Mortini.prefab using Guid(43d7196907d3db34f91bb9fd015d9df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e55e8b81060175ca29572072a66222') in 0.021795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 508
+========================================================================
+Received Import Request.
+  Time since last request: 26.886999 seconds.
+  path: Assets/_Project/03_Meshes/Materials
+  artifactKey: Guid(9a684c7c204a9b0458405e3f0dbc7935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/03_Meshes/Materials using Guid(9a684c7c204a9b0458405e3f0dbc7935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a966b9a1e880cfa50aff17d9e53c6c52') in 0.004667 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.09 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7740.
-Memory consumption went from 143.6 MB to 141.1 MB.
-Total: 30.696333 ms (FindLiveObjects: 0.404209 ms CreateObjectMapping: 0.094958 ms MarkObjects: 29.439792 ms  DeleteObjects: 0.756709 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
 Received Import Request.
-  Time since last request: 88.938452 seconds.
-  path: Packages/com.unity.xr.arfoundation/Assets/Prefabs/AnchorTransform.prefab
-  artifactKey: Guid(779f5eab1277241d6b58ee2c44909b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.xr.arfoundation/Assets/Prefabs/AnchorTransform.prefab using Guid(779f5eab1277241d6b58ee2c44909b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2528bc4a7a5b90ef2a108310ab075ba7') in 0.008608 seconds
+  Time since last request: 102.440376 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Complete/GamesOfMorts.prefab
+  artifactKey: Guid(42b3bc64f2f4ed84badf09fb501475cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Complete/GamesOfMorts.prefab using Guid(42b3bc64f2f4ed84badf09fb501475cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47da9e26d567185cf1b7eb154c579306') in 0.019726 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
+Number of asset objects unloaded after import = 392
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Block.prefab
-  artifactKey: Guid(3dad9afa5bbe5914281a76fc13969c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Block.prefab using Guid(3dad9afa5bbe5914281a76fc13969c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1550de64c57bd8ae34d9070f5ab435d') in 0.003091 seconds
+  Time since last request: 49.368028 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(2b24f7fa58fce824ebcebca62c09d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(2b24f7fa58fce824ebcebca62c09d35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03104a3a62b4bc022ea8d2c05510bc5a') in 0.001418 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Block_Roof_Top.prefab
-  artifactKey: Guid(8e44b81d7ff00f14085542ba4b9523d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Block_Roof_Top.prefab using Guid(8e44b81d7ff00f14085542ba4b9523d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '688d360948a92c30a1adf9184ab4d9b9') in 0.001723 seconds
+  Time since last request: 79.253163 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Complete/Tutorial.prefab
+  artifactKey: Guid(40e1bec4dd0cda0478990a814b232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Complete/Tutorial.prefab using Guid(40e1bec4dd0cda0478990a814b232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bfe60363424847072e1ba4052948b0') in 0.062979 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 52
+Number of asset objects unloaded after import = 1475
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Block_Roof_Window.prefab
-  artifactKey: Guid(d457cae4af5a0a246aa1a82ae1e997fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Block_Roof_Window.prefab using Guid(d457cae4af5a0a246aa1a82ae1e997fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03b120f151b9a0aeb5cf3310b98ddad') in 0.001796 seconds
+  Time since last request: 20.954626 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block.prefab
+  artifactKey: Guid(74cbb48b98567a94b9072ad78846cea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block.prefab using Guid(74cbb48b98567a94b9072ad78846cea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877e3e77d858bd6f482a80781dfbb66e') in 0.112253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Roof_Window.prefab
+  artifactKey: Guid(aff39fa0d180c22489c50eae8957d471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Roof_Window.prefab using Guid(aff39fa0d180c22489c50eae8957d471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720003937f606e05cf6893bbf7fd17c6') in 0.010231 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 83
 ========================================================================
 Received Import Request.
-  Time since last request: 4.095749 seconds.
-  path: Assets/_Project/03_Meshes/Torus.fbx
-  artifactKey: Guid(6c4a759c9ffd8d342bb6be3bba0ef9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/03_Meshes/Torus.fbx using Guid(6c4a759c9ffd8d342bb6be3bba0ef9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e5e69c770d73f34251d2d2eff9d462') in 0.002628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.266659 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Block_Stone_1x1.prefab
-  artifactKey: Guid(88b9a7adb02558b419e76c36d58cdf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Block_Stone_1x1.prefab using Guid(88b9a7adb02558b419e76c36d58cdf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d904c032116b761829932b8df4d105e') in 0.001140 seconds
+  Time since last request: 0.000072 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Stone_1x2.prefab
+  artifactKey: Guid(2416042ea2baa4f42821c770046dc0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Stone_1x2.prefab using Guid(2416042ea2baa4f42821c770046dc0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac27fa0c1be2671857095a9f61811c08') in 0.009696 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000078 seconds.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stairs.prefab
+  artifactKey: Guid(08fa77fba7607004c99b1091e5b2ae4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stairs.prefab using Guid(08fa77fba7607004c99b1091e5b2ae4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d82da282c1c23accb51aacdc9347b8') in 0.010496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x3_Frame_Wood.prefab
+  artifactKey: Guid(3181902f94662364ba5003269b54b19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x3_Frame_Wood.prefab using Guid(3181902f94662364ba5003269b54b19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a4084a4e334520028e83e1c37078e1') in 0.006669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wood_1x1.prefab
+  artifactKey: Guid(cf0174d06e5c45945b1f78c50c9de1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wood_1x1.prefab using Guid(cf0174d06e5c45945b1f78c50c9de1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca71f30975e63fca288db0bd4d5c2208') in 0.009684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wall_3x4_Frame_Wood.prefab
+  artifactKey: Guid(9abb3c6d457ade2409060c1580b4915d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wall_3x4_Frame_Wood.prefab using Guid(9abb3c6d457ade2409060c1580b4915d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dad780a78648ea397cc85552309311') in 0.006493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Bullet.prefab
+  artifactKey: Guid(8a9aeb0683da9da4c93981dcf26a7a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Bullet.prefab using Guid(8a9aeb0683da9da4c93981dcf26a7a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984e6140ea910a2476168afc9c52c8d9') in 0.016323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Roof_Top.prefab
+  artifactKey: Guid(5570dc62552986a47bfd07865bd8ce6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Roof_Top.prefab using Guid(5570dc62552986a47bfd07865bd8ce6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7c51d094f5da38f6084b6197697d1b') in 0.006663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wood_3x1.prefab
+  artifactKey: Guid(5f96ef4cd365d1c4eae0ec98b86b022d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wood_3x1.prefab using Guid(5f96ef4cd365d1c4eae0ec98b86b022d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780787582e883cddebfd55bf0772aed6') in 0.009269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x5_Frame_Wood_Window.prefab
+  artifactKey: Guid(3842eb0eddab2d146bff5e6bf0283f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x5_Frame_Wood_Window.prefab using Guid(3842eb0eddab2d146bff5e6bf0283f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022a61788672fc89c81ee92339f8f067') in 0.006110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wall_5x5_Frame_Wood.prefab
+  artifactKey: Guid(0f524a4cb392c024491dccbe358753b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wall_5x5_Frame_Wood.prefab using Guid(0f524a4cb392c024491dccbe358753b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55dfd0e27bcb003bd66db16feac726cc') in 0.006889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_5x1.prefab
+  artifactKey: Guid(e966133637095284a85106dd591bb037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_5x1.prefab using Guid(e966133637095284a85106dd591bb037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ccd7cf25235fd75545c97ba1da59fba') in 0.006929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_1x2.prefab
+  artifactKey: Guid(8b6879e04540bce469435e0fbf8b9e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_1x2.prefab using Guid(8b6879e04540bce469435e0fbf8b9e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad6eb0724bf677ef032ddc1b3d4c5a1') in 0.007660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wood_5x1_End.prefab
+  artifactKey: Guid(a70357aacb9951343af73d9b4d47a4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wood_5x1_End.prefab using Guid(a70357aacb9951343af73d9b4d47a4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e6e24667ea50bcb34615825fe1ae11') in 0.010684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_1x1.prefab
+  artifactKey: Guid(e5e1ee1fbf6675c4ca0e884613f5b20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Stone_1x1.prefab using Guid(e5e1ee1fbf6675c4ca0e884613f5b20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe8a20faea18ff6fd15c06281302230') in 0.006822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Stone_5x1.prefab
+  artifactKey: Guid(0c3c406f574d907418b926843982df9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Stone_5x1.prefab using Guid(0c3c406f574d907418b926843982df9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bda42816c919ef7150670ac4ae169f') in 0.007600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wood_5x1_End.prefab
+  artifactKey: Guid(10d180e460bae2349b3393316812f036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wood_5x1_End.prefab using Guid(10d180e460bae2349b3393316812f036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445c065594654066e2ac101acb51aa5d') in 0.006563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x4_Frame_Wood.prefab
+  artifactKey: Guid(208a00aa9426d264f9c68c4d1aa90e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Blocks/Block_Wall_3x4_Frame_Wood.prefab using Guid(208a00aa9426d264f9c68c4d1aa90e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '157d4c72f277ca62add606932453fa5e') in 0.008032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wood_1x1.prefab
+  artifactKey: Guid(259027276c4c1bf4fb553cfcd9fc3e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Blocks/Block_Wood_1x1.prefab using Guid(259027276c4c1bf4fb553cfcd9fc3e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952e490021007344ca0655090bd27175') in 0.006621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 1.792851 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Complete/Mortallica.prefab
+  artifactKey: Guid(2f66af44a8456c24d8b91e2e2ff49e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Complete/Mortallica.prefab using Guid(2f66af44a8456c24d8b91e2e2ff49e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd97097180d5d4760338925068c08b2c8') in 0.030080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 732
+========================================================================
+Received Import Request.
+  Time since last request: 0.124113 seconds.
+  path: Assets/_Project/01_Prefabs/UI/Mortar.prefab
+  artifactKey: Guid(3bd78336a71ccb549be4fa1a91a8a9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/UI/Mortar.prefab using Guid(3bd78336a71ccb549be4fa1a91a8a9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb25503860033e4ca5c147051857e2b') in 0.049083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/_Project/01_Prefabs/PlayerPivot.prefab
+  artifactKey: Guid(8e786e935d67757438e01afaebaa6494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/PlayerPivot.prefab using Guid(8e786e935d67757438e01afaebaa6494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0baf5bb554a66efad8523c285dd61344') in 0.030425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.118326 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Complete/RickAndMortar.prefab
+  artifactKey: Guid(192fcd41b6e7f6c4fb18589c0efaefd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Complete/RickAndMortar.prefab using Guid(192fcd41b6e7f6c4fb18589c0efaefd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4eb6398aa3b716dd782e345116b7f2') in 0.028305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 958
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
   path: Assets/_Project/01_Prefabs/Tower.prefab
   artifactKey: Guid(3a4f316b95733df44aa9889a75bf6598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Tower.prefab using Guid(3a4f316b95733df44aa9889a75bf6598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae89ecf5601c1683d909b761f05f845c') in 0.010101 seconds
+Start importing Assets/_Project/01_Prefabs/Tower.prefab using Guid(3a4f316b95733df44aa9889a75bf6598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae89ecf5601c1683d909b761f05f845c') in 0.059487 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1623
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/_Project/01_Prefabs/Tower 1.prefab
-  artifactKey: Guid(19ed84175aba3ab4db5ee4971f575759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Tower 1.prefab using Guid(19ed84175aba3ab4db5ee4971f575759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad01927b9b384367e57f840d3de3b5d9') in 0.004891 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 951
-========================================================================
-Received Import Request.
-  Time since last request: 0.187333 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Block_Roof_Window_Attatched.prefab
-  artifactKey: Guid(8a7aeaaf02a02be4dba08a758b4b1360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Block_Roof_Window_Attatched.prefab using Guid(8a7aeaaf02a02be4dba08a758b4b1360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c96ec20b2c68d3ed0dfcc25b3919cbd') in 0.001873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 235
-========================================================================
-Received Import Request.
-  Time since last request: 1.220011 seconds.
-  path: Assets/_Project/01_Prefabs/Blocks/Tower 3.prefab
-  artifactKey: Guid(de0867775635de440843b718dd01ad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Blocks/Tower 3.prefab using Guid(de0867775635de440843b718dd01ad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242ae9205a76a4671c4f77c6ce0ee339') in 0.004839 seconds
+  Time since last request: 0.000055 seconds.
+  path: Assets/_Project/01_Prefabs/Tower 3.prefab
+  artifactKey: Guid(6b1ee834950d25d4da313ae7ecdff267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Tower 3.prefab using Guid(6b1ee834950d25d4da313ae7ecdff267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0fc65fdfbe04d467ed2d6df448aff7') in 0.021800 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 642
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/_Project/01_Prefabs/Tower 4.prefab
-  artifactKey: Guid(2ea3ab99e43773346a58d7ae9c039895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Tower 4.prefab using Guid(2ea3ab99e43773346a58d7ae9c039895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6751ee271a063cb9dda1d555d66cf3') in 0.005256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 483
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/_Project/01_Prefabs/Tower 3 var.prefab
-  artifactKey: Guid(d916ca8a5ac50b74693150e02d5d8403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Tower 3 var.prefab using Guid(d916ca8a5ac50b74693150e02d5d8403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a106a14961ea30dfaa1648aba08d7094') in 0.003262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 509
-========================================================================
-Received Import Request.
-  Time since last request: 0.953993 seconds.
+  Time since last request: 0.000063 seconds.
   path: Assets/_Project/01_Prefabs/Tower 6.prefab
   artifactKey: Guid(e21f4f9ebdb75b3448b0f4d85be1c40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Tower 6.prefab using Guid(e21f4f9ebdb75b3448b0f4d85be1c40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85202d083c8aadb8c93bc043e25951ac') in 0.003730 seconds
+Start importing Assets/_Project/01_Prefabs/Tower 6.prefab using Guid(e21f4f9ebdb75b3448b0f4d85be1c40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85202d083c8aadb8c93bc043e25951ac') in 0.016955 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 385
 ========================================================================
 Received Import Request.
-  Time since last request: 0.597527 seconds.
-  path: Assets/_Project/03_Meshes/Tower_Mockup.blend
-  artifactKey: Guid(0387bd8d8e73e1247805b5bf970c0f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/03_Meshes/Tower_Mockup.blend using Guid(0387bd8d8e73e1247805b5bf970c0f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1784165f06f64c534825a9e7b779c9e9') in 0.005223 seconds
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Project/01_Prefabs/Tower 5.prefab
+  artifactKey: Guid(7f50ae4626353a148b534489684fc23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Tower 5.prefab using Guid(7f50ae4626353a148b534489684fc23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b01316b5fb675acfea6870187954a') in 0.037881 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 73
+Number of asset objects unloaded after import = 1101
 ========================================================================
 Received Import Request.
-  Time since last request: 0.382120 seconds.
-  path: Assets/_Project/01_Prefabs/TowerBullet.prefab
-  artifactKey: Guid(ac4110f45e71aa740a1f5091c7ee0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/TowerBullet.prefab using Guid(ac4110f45e71aa740a1f5091c7ee0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a0503fae5fe1df540af7c67c88a695') in 0.003966 seconds
+  Time since last request: 0.000052 seconds.
+  path: Assets/_Project/01_Prefabs/Towers/Towers/Tower3.prefab
+  artifactKey: Guid(00dda59eba19cce438f881c5c9b9c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Towers/Towers/Tower3.prefab using Guid(00dda59eba19cce438f881c5c9b9c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f1b850d75f071cd23a50b24dcb7ae0') in 0.029933 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 645
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.15 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.9 MB to 143.4 MB.
-Total: 44.894500 ms (FindLiveObjects: 0.381583 ms CreateObjectMapping: 0.099042 ms MarkObjects: 43.577417 ms  DeleteObjects: 0.835875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 3.40 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.8 MB to 143.2 MB.
-Total: 14.335750 ms (FindLiveObjects: 0.355708 ms CreateObjectMapping: 0.087375 ms MarkObjects: 13.166167 ms  DeleteObjects: 0.726042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 3.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.6 MB to 143.1 MB.
-Total: 9.252000 ms (FindLiveObjects: 0.244875 ms CreateObjectMapping: 0.087125 ms MarkObjects: 8.196500 ms  DeleteObjects: 0.722875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.43 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.5 MB to 143.0 MB.
-Total: 11.081542 ms (FindLiveObjects: 0.285833 ms CreateObjectMapping: 0.091542 ms MarkObjects: 9.939500 ms  DeleteObjects: 0.764167 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.01 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.4 MB to 142.9 MB.
-Total: 15.889667 ms (FindLiveObjects: 0.371125 ms CreateObjectMapping: 0.090209 ms MarkObjects: 14.590916 ms  DeleteObjects: 0.836708 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.6 MB). Loaded Objects now: 7741.
-Memory consumption went from 145.3 MB to 142.8 MB.
-Total: 16.454792 ms (FindLiveObjects: 0.251709 ms CreateObjectMapping: 0.084916 ms MarkObjects: 15.281000 ms  DeleteObjects: 0.836750 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289513000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.759 seconds
-Refreshing native plugins compatible for Editor in 4.10 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.159 seconds
-Domain Reload Profiling: 1918ms
-	BeginReloadAssembly (169ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (94ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (543ms)
-		LoadAssemblies (260ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (316ms)
-			TypeCache.Refresh (302ms)
-				TypeCache.ScanAssembly (285ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1160ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (314ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7746.
-Memory consumption went from 262.8 MB to 260.2 MB.
-Total: 3.735917 ms (FindLiveObjects: 0.297125 ms CreateObjectMapping: 0.103000 ms MarkObjects: 2.587125 ms  DeleteObjects: 0.748417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Number of asset objects unloaded after import = 725
 ========================================================================
 Received Import Request.
-  Time since last request: 495.414639 seconds.
-  path: Assets/Scenes/BlankAR.unity
-  artifactKey: Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BlankAR.unity using Guid(6bdce89659816455b9f906fc62d19910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2450185d2ed79b3a5da4cf545326221c') in 0.001172 seconds
+  Time since last request: 0.000053 seconds.
+  path: Assets/_Project/01_Prefabs/Tower 3 var.prefab
+  artifactKey: Guid(d916ca8a5ac50b74693150e02d5d8403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/01_Prefabs/Tower 3 var.prefab using Guid(d916ca8a5ac50b74693150e02d5d8403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a106a14961ea30dfaa1648aba08d7094') in 0.038037 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 47.047595 seconds.
-  path: Assets/_Project/01_Prefabs/Engine.prefab
-  artifactKey: Guid(7fb1c1c08b93c5f4fb128cecf91e5bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Engine.prefab using Guid(7fb1c1c08b93c5f4fb128cecf91e5bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ae073d1b377776a6f6e19d4d827d66') in 0.008081 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 35
-========================================================================
-Received Import Request.
-  Time since last request: 0.561768 seconds.
-  path: Assets/_Project/01_Prefabs/Cube.prefab
-  artifactKey: Guid(144d243972c7d6d4294fab26eb681888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Cube.prefab using Guid(144d243972c7d6d4294fab26eb681888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c567fe836f39a51b2b3af0b3d70175') in 0.000893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 1.307963 seconds.
-  path: Assets/_Project/01_Prefabs/Canvas.prefab
-  artifactKey: Guid(7f45ed82542ae924c83ca15a3071026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Canvas.prefab using Guid(7f45ed82542ae924c83ca15a3071026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a493d2f8a48e3a79ea6674be4b6270') in 0.035410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 228
-========================================================================
-Received Import Request.
-  Time since last request: 1.233472 seconds.
-  path: Assets/_Project/01_Prefabs/Floor.prefab
-  artifactKey: Guid(bb994bea49099f745b70fbc45c3f7b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Floor.prefab using Guid(bb994bea49099f745b70fbc45c3f7b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080283009f4b02ddbae70f517de44c84') in 0.001238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.601901 seconds.
-  path: Assets/_Project/01_Prefabs/Floor 1.prefab
-  artifactKey: Guid(196f64d6ea5e2244f8780ea6d8f680ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/Floor 1.prefab using Guid(196f64d6ea5e2244f8780ea6d8f680ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e211d0ca17215f9089bf47668f3bf7a') in 0.001756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 17.282509 seconds.
-  path: Assets/_Project/01_Prefabs
-  artifactKey: Guid(82381aeafa619c84491e5ce8f2b7ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs using Guid(82381aeafa619c84491e5ce8f2b7ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc7c27b9f3eb880a6020adfd75c46be') in 0.000724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.545958 seconds.
-  path: Assets/Scripts/AutoPlacement.cs
-  artifactKey: Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AutoPlacement.cs using Guid(10573cf606ee7054382e005b47bdffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10fa613a43ee8de2129da8f9dbf95802') in 0.000500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 509
 ========================================================================
 Received Prepare
 Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 9.64 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 66.79 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 11 unused Assets / (2.5 MB). Loaded Objects now: 7746.
-Memory consumption went from 152.3 MB to 149.8 MB.
-Total: 18.840542 ms (FindLiveObjects: 0.317042 ms CreateObjectMapping: 0.084958 ms MarkObjects: 17.534667 ms  DeleteObjects: 0.902833 ms)
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (2.4 MB). Loaded Objects now: 7782.
+Memory consumption went from 210.4 MB to 208.1 MB.
+Total: 259.666300 ms (FindLiveObjects: 4.828000 ms CreateObjectMapping: 1.719800 ms MarkObjects: 250.676200 ms  DeleteObjects: 2.436000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289487000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.687 seconds
-Refreshing native plugins compatible for Editor in 3.59 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.365 seconds
-Domain Reload Profiling: 2052ms
-	BeginReloadAssembly (138ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (74ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (503ms)
-		LoadAssemblies (226ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (310ms)
-			TypeCache.Refresh (295ms)
-				TypeCache.ScanAssembly (279ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1365ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (614ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (325ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (150ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.13 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7751.
-Memory consumption went from 269.9 MB to 267.4 MB.
-Total: 4.059334 ms (FindLiveObjects: 0.311959 ms CreateObjectMapping: 0.114541 ms MarkObjects: 2.784709 ms  DeleteObjects: 0.847792 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 11.03 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7751.
-Memory consumption went from 159.8 MB to 157.2 MB.
-Total: 26.178125 ms (FindLiveObjects: 0.346334 ms CreateObjectMapping: 0.087541 ms MarkObjects: 24.916750 ms  DeleteObjects: 0.827000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.20 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7751.
-Memory consumption went from 158.7 MB to 156.2 MB.
-Total: 21.942917 ms (FindLiveObjects: 0.366083 ms CreateObjectMapping: 0.087375 ms MarkObjects: 20.646458 ms  DeleteObjects: 0.840917 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 742.471886 seconds.
-  path: Assets/_Project/01_Prefabs/VolumeParticle.prefab
-  artifactKey: Guid(df88759c6518ad54583424e70f4ec755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/01_Prefabs/VolumeParticle.prefab using Guid(df88759c6518ad54583424e70f4ec755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd843cc420caecade6b0161e193d7cbff') in 0.009667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Packages/com.unity.xr.legacyinputhelpers/Prefabs/XRRig.prefab
-  artifactKey: Guid(c116b7497ab8ca34c9188965d4295e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.xr.legacyinputhelpers/Prefabs/XRRig.prefab using Guid(c116b7497ab8ca34c9188965d4295e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef24888126818bafe17fb312a1ccbeb') in 0.004703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.12 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7751.
-Memory consumption went from 158.9 MB to 156.4 MB.
-Total: 13.155792 ms (FindLiveObjects: 0.370291 ms CreateObjectMapping: 0.089875 ms MarkObjects: 11.880291 ms  DeleteObjects: 0.814750 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289487000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.717 seconds
-Refreshing native plugins compatible for Editor in 3.77 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.220 seconds
-Domain Reload Profiling: 1937ms
-	BeginReloadAssembly (143ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (70ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (527ms)
-		LoadAssemblies (252ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (307ms)
-			TypeCache.Refresh (292ms)
-				TypeCache.ScanAssembly (281ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1220ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (430ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (128ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (157ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.6 MB). Loaded Objects now: 7756.
-Memory consumption went from 276.8 MB to 274.2 MB.
-Total: 3.830500 ms (FindLiveObjects: 0.299791 ms CreateObjectMapping: 0.100542 ms MarkObjects: 2.660000 ms  DeleteObjects: 0.769917 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7756.
-Memory consumption went from 166.5 MB to 164.0 MB.
-Total: 7.113125 ms (FindLiveObjects: 0.335375 ms CreateObjectMapping: 0.088416 ms MarkObjects: 5.931167 ms  DeleteObjects: 0.757208 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289487000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.669 seconds
-Refreshing native plugins compatible for Editor in 3.70 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.085 seconds
-Domain Reload Profiling: 1754ms
-	BeginReloadAssembly (144ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (466ms)
-		LoadAssemblies (221ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (286ms)
-			TypeCache.Refresh (271ms)
-				TypeCache.ScanAssembly (254ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1086ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (307ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (149ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7761.
-Memory consumption went from 283.4 MB to 280.9 MB.
-Total: 3.760125 ms (FindLiveObjects: 0.298583 ms CreateObjectMapping: 0.095833 ms MarkObjects: 2.618084 ms  DeleteObjects: 0.747084 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 3.38 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7761.
-Memory consumption went from 173.2 MB to 170.7 MB.
-Total: 7.195083 ms (FindLiveObjects: 0.248292 ms CreateObjectMapping: 0.084375 ms MarkObjects: 6.119333 ms  DeleteObjects: 0.742583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.53 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7761.
-Memory consumption went from 172.2 MB to 169.7 MB.
-Total: 49.878375 ms (FindLiveObjects: 0.360000 ms CreateObjectMapping: 0.087584 ms MarkObjects: 48.490166 ms  DeleteObjects: 0.940000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.17 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.6 MB). Loaded Objects now: 7761.
-Memory consumption went from 172.1 MB to 169.6 MB.
-Total: 17.360541 ms (FindLiveObjects: 0.362125 ms CreateObjectMapping: 0.087416 ms MarkObjects: 14.297292 ms  DeleteObjects: 2.613125 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.6 MB). Loaded Objects now: 7761.
-Memory consumption went from 172.0 MB to 169.5 MB.
-Total: 10.498583 ms (FindLiveObjects: 0.307958 ms CreateObjectMapping: 0.092583 ms MarkObjects: 9.263250 ms  DeleteObjects: 0.834291 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (2.5 MB). Loaded Objects now: 7761.
-Memory consumption went from 171.8 MB to 169.3 MB.
-Total: 9.867000 ms (FindLiveObjects: 0.379458 ms CreateObjectMapping: 0.092417 ms MarkObjects: 8.561666 ms  DeleteObjects: 0.832542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289513000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.687 seconds
-Refreshing native plugins compatible for Editor in 3.69 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.148 seconds
-Domain Reload Profiling: 1836ms
-	BeginReloadAssembly (133ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (509ms)
-		LoadAssemblies (240ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (298ms)
-			TypeCache.Refresh (284ms)
-				TypeCache.ScanAssembly (272ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1149ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (348ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (182ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.05 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7766.
-Memory consumption went from 289.7 MB to 287.1 MB.
-Total: 10.490959 ms (FindLiveObjects: 0.261708 ms CreateObjectMapping: 0.089292 ms MarkObjects: 9.273833 ms  DeleteObjects: 0.865584 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x289513000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/alexdediu/git-projects/Mortar-Mortar/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.620 seconds
-Refreshing native plugins compatible for Editor in 8.42 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.615 seconds
-Domain Reload Profiling: 1235ms
-	BeginReloadAssembly (134ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (440ms)
-		LoadAssemblies (185ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (288ms)
-			TypeCache.Refresh (274ms)
-				TypeCache.ScanAssembly (256ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (615ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (327ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (157ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Shader 'TextMeshPro/Distance Field (UIHsvModifier)': fallback shader 'TextMeshPro/Mobile/Distance Field (UIHsv)' not found
-Refreshing native plugins compatible for Editor in 4.07 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 85 unused Assets / (2.5 MB). Loaded Objects now: 7771.
-Memory consumption went from 296.5 MB to 294.0 MB.
-Total: 3.935000 ms (FindLiveObjects: 0.286334 ms CreateObjectMapping: 0.097458 ms MarkObjects: 2.687083 ms  DeleteObjects: 0.863625 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 

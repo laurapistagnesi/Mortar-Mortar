@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4439372, g: 0.49315345, b: 0.5721989, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -885,4 +885,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10573cf606ee7054382e005b47bdffda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torre: {fileID: 8347060980724687861, guid: 3a4f316b95733df44aa9889a75bf6598, type: 3}
+  towers:
+  - {fileID: 8024223565636876545, guid: 40e1bec4dd0cda0478990a814b232d32, type: 3}
+  - {fileID: 7232015703578236742, guid: 1b222af9f071ecc4eaedb3736b8f7f57, type: 3}
+  - {fileID: 1615961510961791870, guid: 192fcd41b6e7f6c4fb18589c0efaefd4, type: 3}
+  - {fileID: 8133325432271335877, guid: 2f66af44a8456c24d8b91e2e2ff49e3e, type: 3}
+  - {fileID: 8090662953521796919, guid: 651407984624d2a478f37bcac6ceebec, type: 3}
+  - {fileID: 7157790627367604402, guid: d68d775783a0a5e4faa84ea8ebe43da4, type: 3}
+  - {fileID: 3660728557582804237, guid: 42b3bc64f2f4ed84badf09fb501475cd, type: 3}
+  - {fileID: 3189561192478911825, guid: 43d7196907d3db34f91bb9fd015d9df5, type: 3}
