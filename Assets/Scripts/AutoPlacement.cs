@@ -30,11 +30,10 @@ public class AutoPlacement : MonoBehaviour
             {
                 torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
 
-                // Posiziona la torre a una certa distanza dal PlayerPivot
-                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); // Imposta la distanza desiderata
+                // Posiziona la torre a una certa distanza dal cannone
+                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
                 Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
 
-                // Istanzia la torre con la scala già impostata
                 GameObject torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
                 torre.tag = "Torre";
 
