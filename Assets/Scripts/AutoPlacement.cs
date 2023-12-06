@@ -8,9 +8,9 @@ public class AutoPlacement : MonoBehaviour
 {
     private ARRaycastManager aRRaycastManager;
     private bool torrePosizionata = false;
-    private float distanzaMinima = 3.0f;
-    [SerializeField] private GameObject[] towers;
-
+    [SerializeField] private GameObject torrePrefab;
+    private float distanzaMinima = 0.5f;
+    [SerializeField] private Transform playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
 
     private void Awake()
@@ -28,11 +28,15 @@ public class AutoPlacement : MonoBehaviour
 
             if (distanzaDallaTelecamera >= distanzaMinima)
             {
-                GameObject torre = towers[Menu.currentTowerIndex];
-                torre.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-                torre.transform.position = new Vector3(hitPose.position.x, hitPose.position.y, hitPose.position.z);
-                torre.transform.rotation = hitPose.rotation;
-                Instantiate(torre);
+                torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
+
+                // Posiziona la torre a una certa distanza dal PlayerPivot
+                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); // Imposta la distanza desiderata
+                Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
+
+                // Istanzia la torre con la scala già impostata
+                GameObject torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
+                torre.tag = "Torre";
 
                 torrePosizionata = true;
             }

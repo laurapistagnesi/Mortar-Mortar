@@ -57,6 +57,15 @@ public class LineBehaviour : MonoBehaviour
             if (hitCount > 0)
             {
                 var hit = hits[0];
+                // identifica l'oggetto con  tag "torre"
+                if (hit.transform.CompareTag("Torre")) 
+                {
+                    var hitPosition = Quaternion.Inverse(transform.rotation) * (hit.point - transform.position);
+                    lineRenderer.SetPosition(i, hitPosition);
+                    lineRenderer.positionCount = i + 1;
+                    PositionCollisionGizmo(hit);
+                    return;
+                }
                 var localHitPosition = Quaternion.Inverse(transform.rotation) * (hit.point - transform.position);
                 lineRenderer.SetPosition(i,localHitPosition);
                 lineRenderer.positionCount = i + 1;
