@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
+  m_Script: {fileID: 11500000, guid: d4c862e4a2fd57748ab1bc081b2e6209, type: 3}
   m_Name: Level06
   m_EditorClassIdentifier: 
-  levelName: Immortarl
-  levelDescription: this level sucks
-  bulletList: {fileID: 11400000, guid: b458ffba65b07fe41826d563063cadc3, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: de0867775635de440843b718dd01ad1c,
+  levelName: Games of Morts
+  levelDescription: This is a great level!
+  bulletList: {fileID: 11400000, guid: 8fd7210e9670dc24ab885dbfebfa244e, type: 2}
+  towerPrefab: {fileID: 3660728557582804237, guid: 42b3bc64f2f4ed84badf09fb501475cd,
     type: 3}

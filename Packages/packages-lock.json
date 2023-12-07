@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.oss.leantween": {
+      "version": "https://github.com/JohannesDeml/LeanTween.git#2.50.3",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "36e5f888f7f2c38597a1dd555e7f6898fa700f15"
+    },
+    "com.supyrb.signals": {
+      "version": "https://github.com/supyrb/signals.git#0.3.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2f07b4b8f49f5054fcde4510ab16a8e2718bb064"
+    },
     "com.unity.burst": {
       "version": "1.8.4",
       "depth": 1,

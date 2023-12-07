@@ -9,18 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
+  m_Script: {fileID: 11500000, guid: d4c862e4a2fd57748ab1bc081b2e6209, type: 3}
   m_Name: Level00
   m_EditorClassIdentifier: 
   levelName: Tutorial
-  levelDescription: 'Arrow keys to rotate
-
-    Hold space to aim
-
-    Release space
-    to shoot
-
-    Don''t destroy the tower'
+  levelDescription: This is a great level!
   bulletList: {fileID: 11400000, guid: 8f6fbf1f69965ea47a61d85450172e7e, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: 3a4f316b95733df44aa9889a75bf6598,
+  towerPrefab: {fileID: 8024223565636876545, guid: 40e1bec4dd0cda0478990a814b232d32,
     type: 3}

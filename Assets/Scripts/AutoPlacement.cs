@@ -11,7 +11,7 @@ public class AutoPlacement : MonoBehaviour
     public static event Action OnTowerPlaced;
     private ARRaycastManager aRRaycastManager;
     private bool torrePosizionata = false;
-    [SerializeField] private GameObject torrePrefab;
+    [SerializeField] private GameObject[] towers;
     private float distanzaMinima = 0.5f;
     [SerializeField] private Transform playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
@@ -31,6 +31,7 @@ public class AutoPlacement : MonoBehaviour
 
             if (distanzaDallaTelecamera >= distanzaMinima)
             {
+                GameObject torrePrefab = towers[Menu.currentTowerIndex];
                 torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
 
                 // Posiziona la torre a una certa distanza dal cannone

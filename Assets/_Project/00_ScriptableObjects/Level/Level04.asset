@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3973878abff24839b9780dda5b89310e, type: 3}
+  m_Script: {fileID: 11500000, guid: d4c862e4a2fd57748ab1bc081b2e6209, type: 3}
   m_Name: Level04
   m_EditorClassIdentifier: 
   levelName: Mortarpunk2077
-  levelDescription: 'Wake the **** up Samurai
-
-    we got a tower to repair'
+  levelDescription: This is a great level!
   bulletList: {fileID: 11400000, guid: e1ae3ae447c4442488f7f27cd1d0dee3, type: 2}
-  towerPrefab: {fileID: 7608622794980104711, guid: de0867775635de440843b718dd01ad1c,
+  towerPrefab: {fileID: 8090662953521796919, guid: 651407984624d2a478f37bcac6ceebec,
     type: 3}

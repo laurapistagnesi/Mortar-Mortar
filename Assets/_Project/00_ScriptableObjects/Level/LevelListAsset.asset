@@ -9,18 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f9d37b53be04f9db50d09810114d2d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 367131e1cfed3254a9c96724cf9e7eff, type: 3}
   m_Name: LevelListAsset
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: 5e1d566221b441b49b011bcb95220bac, type: 2}
-  - {fileID: 11400000, guid: c3ab9113e05ca9d43a60fe5c8d33b379, type: 2}
-  - {fileID: 11400000, guid: 0215394e217b82448887f2fd4d38fdf2, type: 2}
-  - {fileID: 11400000, guid: 7d379267b5db37c4e8917cc2744108a4, type: 2}
-  - {fileID: 11400000, guid: 71f9c114e1bbe3b48b64e650e90c1d98, type: 2}
-  - {fileID: 11400000, guid: 1ca0e31880232c54fb24c51aa85fb9b6, type: 2}
-  - {fileID: 11400000, guid: 973d5a802c7d78e438b5f5ff445d8803, type: 2}
-  - {fileID: 11400000, guid: e42232b569e7f8748b7933c87de8d30a, type: 2}
-  - {fileID: 11400000, guid: f50e78f1b3625ad4d9ed93fd98c4fa9b, type: 2}
-  - {fileID: 11400000, guid: 28aab5cdfde76e946b26a8e66a8fb2e3, type: 2}
-  - {fileID: 11400000, guid: 32d2181c7ef573345874f00ce1b79875, type: 2}
+  - {fileID: 11400000, guid: 331ff58fe49cab940bec92ab1de39872, type: 2}
+  - {fileID: 11400000, guid: 084cae3f2198aff48923aacf4029168e, type: 2}
+  - {fileID: 11400000, guid: de614ffb72b42e940aa761197e553ce6, type: 2}
+  - {fileID: 11400000, guid: 2d688e1bff7291843a052df1d365d573, type: 2}
+  - {fileID: 11400000, guid: 6ac45d3b7fc784643b24cdbc12e70316, type: 2}
+  - {fileID: 11400000, guid: dd58bd2726409af41903c5b0543265d1, type: 2}
+  - {fileID: 11400000, guid: 84e5892b3bee8644eb7fa42eb9b267f2, type: 2}
+  - {fileID: 11400000, guid: 866b9a518c3bc95459c282bd18a5c832, type: 2}
