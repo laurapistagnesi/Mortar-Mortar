@@ -1,3 +1,5 @@
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -6,6 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
 {
+    public static event Action OnTowerPlaced;
     private ARRaycastManager aRRaycastManager;
     private bool torrePosizionata = false;
     [SerializeField] private GameObject torrePrefab;
@@ -38,6 +41,8 @@ public class AutoPlacement : MonoBehaviour
                 torre.tag = "Torre";
 
                 torrePosizionata = true;
+                OnTowerPlaced?.Invoke();
+
             }
             else
             {

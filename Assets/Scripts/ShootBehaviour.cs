@@ -35,25 +35,34 @@ public class ShootBehaviour : MonoBehaviour
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
     [SerializeField] private BulletListAsset bulletListAsset = null;
-    
+    [SerializeField] private AutoPlacement autoPlacement;
+    [SerializeField] private bool canShoot = false;
+
 
     void Start()
     {
+        AutoPlacement.OnTowerPlaced += OnTowerPlaced;
         shootAngle = -shootAngleOverTime.Evaluate(0f);
         cannonAdditionalRotation = Quaternion.AngleAxis(cannonAdditionalRotationAngle, Vector3.right);
     }
 
     void Update()
     {
-        float yDirection = Input.GetAxis("Horizontal");
-        RotatePivot(yDirection);
+        if (canShoot)
+        {
+            float yDirection = Input.GetAxis("Horizontal");
+            RotatePivot(yDirection);
 
-        UpdateShootInput();
+            UpdateShootInput();
 
-        lineBehaviour.SetActive(true);
-        UpdateProjectileDirection();
+            lineBehaviour.SetActive(true);
+            UpdateProjectileDirection();
+        }
     }
-
+    private void OnTowerPlaced()
+    {
+        canShoot = true;
+    }
     private void UpdateProjectileDirection()
     {
         var localShootDirection = Quaternion.AngleAxis(shootAngle, Vector3.right);
