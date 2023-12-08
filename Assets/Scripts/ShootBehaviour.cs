@@ -35,8 +35,8 @@ public class ShootBehaviour : MonoBehaviour
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
     [SerializeField] private BulletListAsset bulletListAsset = null;
-    [SerializeField] private AutoPlacement autoPlacement;
     [SerializeField] private bool canShoot = false;
+    [SerializeField] private GameObject panelWaiting;
 
 
     void Start()
@@ -50,6 +50,7 @@ public class ShootBehaviour : MonoBehaviour
     {
         if (canShoot)
         {
+            panelWaiting.SetActive(false);
             float yDirection = Input.GetAxis("Horizontal");
             RotatePivot(yDirection);
 
