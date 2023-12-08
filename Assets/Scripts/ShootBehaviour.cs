@@ -1,5 +1,9 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
+using System.Collections.Generic;
+using System;
 
 public class ShootBehaviour : MonoBehaviour
 {
@@ -27,16 +31,17 @@ public class ShootBehaviour : MonoBehaviour
     private float shootAngle;
     private bool loadingShot;
     private float loadingShotStartTime;
-    //private int currentBulletIndex = 0;
+    private int currentBulletIndex = 0;
     private Quaternion cannonAdditionalRotation;
 
     [SerializeField] private float force = 1000.0f; // Forza di lancio
     [SerializeField] private float swipeThreshold = 10.0f; // La soglia per considerare uno swipe
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
-    [SerializeField] private BulletListAsset bulletListAsset = null;
     [SerializeField] private bool canShoot = false;
     [SerializeField] private GameObject panelWaiting;
+    public TowerManager towerManager;
+    [SerializeField] public TextMeshProUGUI remainingText;
 
 
     void Start()
@@ -124,12 +129,21 @@ public class ShootBehaviour : MonoBehaviour
         //GameObject projectileInstance = Instantiate(projectilePrefab, transform.position, transform.rotation);
         //Rigidbody rb = projectileInstance.GetComponent<Rigidbody>();
         //rb.AddForce(shootDirection * force);
-        var bulletPrefab = bulletListAsset.Prefabs[0];
+        //var bulletPrefab = bulletListAsset.Prefabs[0];
+        List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
+        if (currentBulletIndex >= bulletList.Count)
+        {
+            return;
+        }
+        var bulletPrefab = bulletList[currentBulletIndex];
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        var block = instance.GetComponent<Block>();        
+        var block = instance.GetComponent<Block>();       
         block.Shoot(shootDirection * force);
+        currentBulletIndex++;
         onShoot.Invoke();
+        var remainingItems = Math.Max(0, bulletList.Count - currentBulletIndex);
+        remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
     }
 }
 
