@@ -12,19 +12,10 @@ public class Menu : MonoBehaviour
     public static int currentTowerIndex = 0;
 
     [SerializeField] private TMP_Text level;
-    [SerializeField] private LevelListAsset levelList;
 
     public void onPlayButton()
     {
-        if (levelList != null)
-        {
-            levelList.ChangeIndexRelative(currentTowerIndex);
-            SceneManager.LoadScene(1);
-        }
-        else
-        {
-            Debug.LogError("LevelList is not assigned to Menu.");
-        }
+        SceneManager.LoadScene(1);
     }
 
     public void onPreviousButton()
