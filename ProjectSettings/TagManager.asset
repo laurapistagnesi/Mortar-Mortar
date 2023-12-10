@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spawnable
+  - Torre
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Mortar
   - Water
   - UI
-  - 
+  - Block
   - 
   - 
   - 

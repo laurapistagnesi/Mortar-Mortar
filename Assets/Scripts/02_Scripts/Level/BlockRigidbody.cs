@@ -13,6 +13,7 @@ using UnityEngine;
 
 namespace Supyrb
 {
+
 	public class BlockRigidbody : MonoBehaviour
 	{
 		[SerializeField]

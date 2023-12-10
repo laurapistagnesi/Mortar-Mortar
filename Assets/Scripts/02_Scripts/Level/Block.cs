@@ -101,16 +101,23 @@ public class Block : MonoBehaviour
 			var otherController = otherBlock.ControllerBlock;
 			if (otherController != this)
 			{
+				Debug.Log("Fa il merge perchè blocchi diversi");
 				MergeWithOtherBlock(collision, otherController);
 				onImpact.Invoke();
+			}
+			else
+			{
+				Debug.Log("Blocchi uguali");
 			}
 		}
 	}
 
 	private void MergeWithOtherBlock(Collision collision, Block other)
 	{
-		
+		Debug.Log("MergeWithOtherBlock called");	
 		other.transform.parent = transform;
+		// Imposta la massa a zero prima di rimuovere il corpo rigido
+    	other.blockRigidbody.Rb.mass = 0f;
 		blockRigidbody.Rb.Merge(other.blockRigidbody.Rb);
 		other.RemoveRigidbody();
 	}

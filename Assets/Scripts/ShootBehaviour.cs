@@ -34,7 +34,7 @@ public class ShootBehaviour : MonoBehaviour
     private int currentBulletIndex = 0;
     private Quaternion cannonAdditionalRotation;
 
-    [SerializeField] private float force = 1000.0f; // Forza di lancio
+    [SerializeField] private float force = 20.0f; // Forza di lancio
     [SerializeField] private float swipeThreshold = 10.0f; // La soglia per considerare uno swipe
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
@@ -42,7 +42,6 @@ public class ShootBehaviour : MonoBehaviour
     [SerializeField] private GameObject panelWaiting;
     public TowerManager towerManager;
     [SerializeField] public TextMeshProUGUI remainingText;
-
 
     void Start()
     {
@@ -145,5 +144,12 @@ public class ShootBehaviour : MonoBehaviour
         var remainingItems = Math.Max(0, bulletList.Count - currentBulletIndex);
         remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
     }
+
+    public void RotateCannon(int direction)
+    {
+        pivotTransform.rotation *= Quaternion.Euler(0.0f, direction * 1.5f, 0.0f);
+        Debug.Log(pivotTransform.position);
+    }
+
 }
 
