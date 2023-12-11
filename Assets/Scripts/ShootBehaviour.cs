@@ -1,18 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using TMPro;
 using System.Collections.Generic;
 using System;
 
 public class ShootBehaviour : MonoBehaviour
 {
-    //[SerializeField]
-    //private GameObject projectilePrefab;
-
-    //[SerializeField]
-    //public float force = 100.0f;
-
     [SerializeField]
     private float cannonAdditionalRotationAngle = 60f;
 
@@ -42,6 +37,9 @@ public class ShootBehaviour : MonoBehaviour
     [SerializeField] private GameObject panelWaiting;
     public TowerManager towerManager;
     [SerializeField] public TextMeshProUGUI remainingText;
+    public float rotationSpeed = 5;
+    bool isPressedRight;
+    bool isPressedLeft;
 
     void Start()
     {
@@ -62,6 +60,27 @@ public class ShootBehaviour : MonoBehaviour
 
             lineBehaviour.SetActive(true);
             UpdateProjectileDirection();
+        }
+        if(isPressedRight)
+        {
+            Debug.Log(pivotTransform.rotation.eulerAngles.y);
+            Debug.Log(Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y));
+            int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
+            if ((16f < yRotation) && (yRotation < 345f))
+            {
+                return;
+            }
+            pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*(-1.5f), 0.0f);
+
+        }
+        if(isPressedLeft)
+        {
+            int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
+            if ((15f < yRotation) && (yRotation < 344f))
+            {
+                return;
+            }
+            pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*1.5f, 0.0f);
         }
     }
     private void OnTowerPlaced()
@@ -124,11 +143,6 @@ public class ShootBehaviour : MonoBehaviour
 
     void ShootObject()
     {
-        //var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right) * transform.forward;
-        //GameObject projectileInstance = Instantiate(projectilePrefab, transform.position, transform.rotation);
-        //Rigidbody rb = projectileInstance.GetComponent<Rigidbody>();
-        //rb.AddForce(shootDirection * force);
-        //var bulletPrefab = bulletListAsset.Prefabs[0];
         List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
         if (currentBulletIndex >= bulletList.Count)
         {
@@ -145,11 +159,15 @@ public class ShootBehaviour : MonoBehaviour
         remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
     }
 
-    public void RotateCannon(int direction)
+    public void TogglePressedRight(bool value)
     {
-        pivotTransform.rotation *= Quaternion.Euler(0.0f, direction * 1.5f, 0.0f);
-        Debug.Log(pivotTransform.position);
+        isPressedRight = value;
     }
 
+    public void TogglePressedLeft(bool value)
+    {
+        isPressedLeft = value;
+    }
+ 
 }
 
