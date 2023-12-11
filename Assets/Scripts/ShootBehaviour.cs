@@ -63,8 +63,6 @@ public class ShootBehaviour : MonoBehaviour
         }
         if(isPressedRight)
         {
-            Debug.Log(pivotTransform.rotation.eulerAngles.y);
-            Debug.Log(Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y));
             int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
             if ((16f < yRotation) && (yRotation < 345f))
             {
