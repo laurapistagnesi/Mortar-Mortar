@@ -121,16 +121,22 @@ public class ShootBehaviour : MonoBehaviour
             return;
         }
 
-        // Verifica se il tocco è attivo
-        if ((Input.touchCount>0) && (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary))
+        // Esegui il raycast solo se il tocco è sulla torretta
+        Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        RaycastHit raycastHit;
+        if ((Physics.Raycast(raycast, out raycastHit)) && (raycastHit.transform.name == "MortarMortar"))
         {
-            loadingShot = true;
-            loadingShotStartTime = Time.time;
-        }
-
-        if (Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            swipeStartPos = Input.GetTouch(0).position;
+            // Verifica se il tocco è attivo
+            if ((Input.touchCount>0) && (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary))
+            {
+                loadingShot = true;
+                loadingShotStartTime = Time.time;
+            }
+            if ((Input.GetTouch(0).phase == TouchPhase.Began))
+            {
+                Debug.Log("Mortar clicked");
+                swipeStartPos = Input.GetTouch(0).position;
+            }
         }
     }
 
