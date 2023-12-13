@@ -42,6 +42,8 @@ public class ShootBehaviour : MonoBehaviour
     bool isPressedLeft;
     private List<GameObject> instantiatedBlocks = new List<GameObject>(); // Lista per tenere traccia degli oggetti istanziati
 
+    [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
+
     void Start()
     {
         AutoPlacement.OnTowerPlaced += OnTowerPlaced;
@@ -163,6 +165,8 @@ public class ShootBehaviour : MonoBehaviour
         onShoot.Invoke();
         var remainingItems = Math.Max(0, bulletList.Count - currentBulletIndex);
         remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
+
+        audioManager.PlaySFX(audioManager.shoot); //Fa partire il suono dello sparo
     }
 
     public void TogglePressedRight(bool value)
