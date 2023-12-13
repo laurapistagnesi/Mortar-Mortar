@@ -40,6 +40,7 @@ public class ShootBehaviour : MonoBehaviour
     public float rotationSpeed = 5;
     bool isPressedRight;
     bool isPressedLeft;
+    private List<GameObject> instantiatedBlocks = new List<GameObject>(); // Lista per tenere traccia degli oggetti istanziati
 
     void Start()
     {
@@ -64,7 +65,7 @@ public class ShootBehaviour : MonoBehaviour
         if(isPressedRight)
         {
             int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-            if ((16f < yRotation) && (yRotation < 345f))
+            if ((16f < yRotation) && (yRotation < 350f))
             {
                 return;
             }
@@ -74,7 +75,7 @@ public class ShootBehaviour : MonoBehaviour
         if(isPressedLeft)
         {
             int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-            if ((15f < yRotation) && (yRotation < 344f))
+            if ((15f < yRotation) && (yRotation < 349f))
             {
                 return;
             }
@@ -155,6 +156,7 @@ public class ShootBehaviour : MonoBehaviour
         var bulletPrefab = bulletList[currentBulletIndex];
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        instantiatedBlocks.Add(instance); // Aggiungi l'oggetto alla lista
         var block = instance.GetComponent<Block>();       
         block.Shoot(shootDirection * force);
         currentBulletIndex++;
@@ -171,6 +173,19 @@ public class ShootBehaviour : MonoBehaviour
     public void TogglePressedLeft(bool value)
     {
         isPressedLeft = value;
+    }
+
+    public void RestartBullet()
+    {
+        foreach (var block in instantiatedBlocks)
+        {
+            Destroy(block);
+        }
+        instantiatedBlocks.Clear(); // Pulisci la lista dopo la distruzione
+        List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
+        currentBulletIndex = 0;
+        var remainingItems = Math.Max(0, bulletList.Count - currentBulletIndex);
+        remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
     }
  
 }

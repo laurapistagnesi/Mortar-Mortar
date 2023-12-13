@@ -15,6 +15,7 @@ public class AutoPlacement : MonoBehaviour
     private float distanzaMinima = 0.5f;
     [SerializeField] private Transform playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
+    private GameObject torre;
 
     private void Awake()
     {
@@ -38,7 +39,7 @@ public class AutoPlacement : MonoBehaviour
                 Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
                 Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
 
-                GameObject torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
+                torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
                 torre.tag = "Torre";
 
                 torrePosizionata = true;
@@ -50,5 +51,16 @@ public class AutoPlacement : MonoBehaviour
                 Debug.Log("La torre è troppo vicina alla camera.");
             }
         }
+    }
+
+    public void RestartTower()
+    {
+        // Distruggi la torre istanziata se esiste
+        if (torre != null)
+        {
+            Destroy(torre);
+        }
+        // Reimposta il flag per consentire la posizione di una nuova torre
+        torrePosizionata = false;
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7608622794980104712
 Transform:
   m_ObjectHideFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6997637371983740895}
-  - {fileID: 720771417404000610}
+  - {fileID: 183356528527293125}
   - {fileID: 6997637370412445333}
   - {fileID: 6997637372072604632}
   - {fileID: 6997637371285568410}
@@ -52,7 +52,7 @@ Transform:
   - {fileID: 8037319587977316448}
   - {fileID: 6043978631990822399}
   - {fileID: 1842727376547740749}
-  - {fileID: 7621872298466912665}
+  - {fileID: 7471829730769258418}
   - {fileID: 7189632650178566985}
   - {fileID: 8679155277868633236}
   - {fileID: 3561604387724228873}
@@ -132,7 +132,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3c406f574d907418b926843982df9f, type: 3}
---- !u!4 &720771417404000610 stripped
+--- !u!4 &183356528527293125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 615823283685749668, guid: 0c3c406f574d907418b926843982df9f,
     type: 3}
@@ -2177,7 +2177,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3842eb0eddab2d146bff5e6bf0283f71, type: 3}
---- !u!4 &7621872298466912665 stripped
+--- !u!4 &7471829730769258418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1042321580127350314, guid: 3842eb0eddab2d146bff5e6bf0283f71,
     type: 3}

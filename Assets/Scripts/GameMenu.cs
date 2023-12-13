@@ -6,17 +6,19 @@ using UnityEngine.SceneManagement;
 public class GameMenu : MonoBehaviour
 { 
     [SerializeField] GameObject gameMenu;
+    public ShootBehaviour newBullet;
+    public AutoPlacement autoPlacement;
 
     public void Resume()
     {
-        //Si disattiva il menù
+        //Si disattiva il menï¿½
         gameMenu.SetActive(false);
         //Il gioco riprende 
         Time.timeScale = 1f;
     }
     public void Pause()
     {
-        //Si attiva il menù
+        //Si attiva il menï¿½
         gameMenu.SetActive(true);
         //Il gioco viene messo in pausa 
         Time.timeScale = 0f;
@@ -25,6 +27,16 @@ public class GameMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void Restart()
+    {
+        //Si disattiva il menï¿½
+        gameMenu.SetActive(false);
+        //Il gioco riprende 
+        Time.timeScale = 1f;
+        newBullet.RestartBullet();
+        autoPlacement.RestartTower();
     }
 
 }
