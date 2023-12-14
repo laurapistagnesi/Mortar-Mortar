@@ -887,6 +887,11 @@ PrefabInstance:
       objectReference: {fileID: 1705779834}
     - target: {fileID: 447689294698970171, guid: 8e786e935d67757438e01afaebaa6494,
         type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 857573171}
+    - target: {fileID: 447689294698970171, guid: 8e786e935d67757438e01afaebaa6494,
+        type: 3}
       propertyPath: remainingText
       value: 
       objectReference: {fileID: 432423030}
@@ -1666,7 +1671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &857573172
 RectTransform:
   m_ObjectHideFlags: 0

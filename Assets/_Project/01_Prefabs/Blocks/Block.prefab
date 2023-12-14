@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 901108054930718224}
   - component: {fileID: 4605948269636110487}
   - component: {fileID: -304474072705753705}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Block
   m_TagString: Torre
   m_Icon: {fileID: 0}
