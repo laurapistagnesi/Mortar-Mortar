@@ -3379,6 +3379,7 @@ MonoBehaviour:
   countdownDisplay: {fileID: 1429898771}
   countdownPanel: {fileID: 1492042511}
   winPanel: {fileID: 1618428549}
+  audioManager: {fileID: 1855093377}
 --- !u!114 &1492042513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4406,6 +4407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SFXSource: {fileID: 1855093378}
   shoot: {fileID: 8300000, guid: 20434e4b65f91ef48b8525d72b44b52b, type: 3}
+  countdownTic: {fileID: 8300000, guid: f2655c85db9a5284e8e2253cee8319cd, type: 3}
+  countdownEnd: {fileID: 8300000, guid: 867476dad1b10cd4fa37f1e94cdcf8be, type: 3}
 --- !u!82 &1855093378
 AudioSource:
   m_ObjectHideFlags: 0
