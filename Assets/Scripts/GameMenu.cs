@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameMenu : MonoBehaviour
 { 
     [SerializeField] GameObject gameMenu;
+    [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject winPanel;
     public ShootBehaviour newBullet;
     public AutoPlacement autoPlacement;
 
@@ -33,6 +35,8 @@ public class GameMenu : MonoBehaviour
     {
         //Si disattiva il men�
         gameMenu.SetActive(false);
+        gameOverPanel.SetActive(false);
+        winPanel.SetActive(false);
         //Il gioco riprende 
         Time.timeScale = 1f;
         newBullet.RestartBullet();

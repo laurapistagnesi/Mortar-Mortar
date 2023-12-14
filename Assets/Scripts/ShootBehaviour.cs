@@ -45,6 +45,8 @@ public class ShootBehaviour : MonoBehaviour
     [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
 
     [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject countdownPanel;
+    public TextMeshProUGUI countdownDisplay;
 
     void Start()
     {
@@ -153,9 +155,10 @@ public class ShootBehaviour : MonoBehaviour
     void ShootObject()
     {
         List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
-        if (currentBulletIndex >= bulletList.Count)
+        if (((currentBulletIndex+1) >= bulletList.Count) || (currentBulletIndex >= bulletList.Count))
         {
-            return;
+            countdownPanel.SetActive(true);
+            countdownDisplay.gameObject.SetActive(true);
         }
         var bulletPrefab = bulletList[currentBulletIndex];
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
