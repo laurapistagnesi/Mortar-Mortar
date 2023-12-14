@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -304474072705753705}
   m_Layer: 5
   m_Name: Block
-  m_TagString: Torre
+  m_TagString: pezzo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,14 +15,21 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] private Transform playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
     private GameObject torre;
+    [SerializeField] GameObject gameOverPanel;
+
 
     private void Awake()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
-    }
+        ContaPezzi.OnGameOver += HandleGameOver;
 
-    void Update()
+    }
+   
+  
+
+    private void Update()
     {
+        
         if (!torrePosizionata && aRRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hitList, TrackableType.PlaneWithinPolygon))
         {
             Pose hitPose = hitList[0].pose;
@@ -35,16 +41,18 @@ public class AutoPlacement : MonoBehaviour
                 GameObject torrePrefab = towers[Menu.currentTowerIndex];
                 torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
 
-                // Posiziona la torre a una certa distanza dal cannone
-                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
+                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2);
                 Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
 
+
+               
+                
                 torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
-                torre.tag = "Torre";
+                
+
 
                 torrePosizionata = true;
                 OnTowerPlaced?.Invoke();
-
             }
             else
             {
@@ -55,12 +63,15 @@ public class AutoPlacement : MonoBehaviour
 
     public void RestartTower()
     {
-        // Distruggi la torre istanziata se esiste
         if (torre != null)
         {
             Destroy(torre);
         }
-        // Reimposta il flag per consentire la posizione di una nuova torre
         torrePosizionata = false;
+    }
+    private void HandleGameOver()
+    {
+        gameOverPanel.SetActive(true);
+
     }
 }
