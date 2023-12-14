@@ -44,6 +44,8 @@ public class ShootBehaviour : MonoBehaviour
 
     [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
 
+    [SerializeField] GameObject gameOverPanel;
+
     void Start()
     {
         AutoPlacement.OnTowerPlaced += OnTowerPlaced;
