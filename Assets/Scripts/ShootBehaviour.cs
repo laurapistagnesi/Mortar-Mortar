@@ -67,25 +67,26 @@ public class ShootBehaviour : MonoBehaviour
 
             lineBehaviour.SetActive(true);
             UpdateProjectileDirection();
-        }
-        if(isPressedRight)
-        {
-            int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-            if ((16f < yRotation) && (yRotation < 350f))
-            {
-                return;
-            }
-            pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*(-1.5f), 0.0f);
 
-        }
-        if(isPressedLeft)
-        {
-            int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-            if ((15f < yRotation) && (yRotation < 349f))
+            if(isPressedRight)
             {
-                return;
+                int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
+                if ((16f < yRotation) && (yRotation < 350f))
+                {
+                    return;
+                }
+                pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*(-1.5f), 0.0f);
+
             }
-            pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*1.5f, 0.0f);
+            if(isPressedLeft)
+            {
+                int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
+                if ((15f < yRotation) && (yRotation < 349f))
+                {
+                    return;
+                }
+                pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*1.5f, 0.0f);
+            }
         }
     }
     private void OnTowerPlaced()
@@ -157,6 +158,7 @@ public class ShootBehaviour : MonoBehaviour
         List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
         if (((currentBulletIndex+1) >= bulletList.Count) || (currentBulletIndex >= bulletList.Count))
         {
+            canShoot = false;
             countdownPanel.SetActive(true);
             countdownDisplay.gameObject.SetActive(true);
         }
