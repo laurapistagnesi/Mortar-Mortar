@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using System.Collections;
+using TMPro;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
@@ -16,6 +18,9 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] private Transform playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
     private GameObject torre;
+    [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject countdownPanel;
+    public TextMeshProUGUI countdownDisplay;
 
     private void Awake()
     {
@@ -62,5 +67,55 @@ public class AutoPlacement : MonoBehaviour
         }
         // Reimposta il flag per consentire la posizione di una nuova torre
         torrePosizionata = false;
+    }
+
+    public IEnumerator CheckTowerState()
+    {
+        if (torre != null)
+        {
+            List<Block> towerBlocks = new List<Block>();
+            foreach (Transform child in torre.gameObject.transform)
+            {
+                Block block = child.GetComponent<Block>();
+
+                if (block != null)
+                {
+                    towerBlocks.Add(block);
+                }
+            }
+            yield return new WaitForSeconds(2.5f);
+            foreach (var block in towerBlocks)
+            {
+                Rigidbody blockRigidbody = block.GetComponent<Rigidbody>();
+                Vector3 velocity = blockRigidbody.velocity;
+                float speed = velocity.magnitude;
+                Debug.Log("speed " + speed);
+                if (speed > 0f)
+                {
+                    Debug.Log("Hai perso");
+                    gameOverPanel.SetActive(true);
+                    if((countdownDisplay!=null) && (countdownPanel!=null))
+                    {
+                        countdownPanel.SetActive(false);
+                        countdownDisplay.gameObject.SetActive(false);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Torre non trovata");
+            gameOverPanel.SetActive(true);
+        }
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        if((countdownDisplay!=null) && (countdownPanel!=null))
+        {
+            countdownPanel.SetActive(false);
+            countdownDisplay.gameObject.SetActive(false);
+        }
     }
 }

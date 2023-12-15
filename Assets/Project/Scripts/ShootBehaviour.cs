@@ -41,10 +41,7 @@ public class ShootBehaviour : MonoBehaviour
     bool isPressedRight;
     bool isPressedLeft;
     private List<GameObject> instantiatedBlocks = new List<GameObject>(); // Lista per tenere traccia degli oggetti istanziati
-
     [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
-
-    [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
 
@@ -78,6 +75,7 @@ public class ShootBehaviour : MonoBehaviour
                 pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*(-1.5f), 0.0f);
 
             }
+
             if(isPressedLeft)
             {
                 int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);

@@ -50,13 +50,37 @@ public class Block : MonoBehaviour
 	private Block controllerBlock;
 
 	public Block ControllerBlock => controllerBlock;
+	
+	[SerializeField]
+    private float noCollisionTimeout = 2.0f; // Tempo massimo senza collisioni per considerare il blocco come non colpito
+
+    private bool hasCollided = false;
+
+	private int contBlock = 0;
 
 	public void Shoot(Vector3 force)
 	{
 		blockRigidbody.Rb.AddForce(force, ForceMode.VelocityChange);
 		persistentLevelElement = false;
 		state = State.Sticky;
+		StartCoroutine(CheckNoCollision());
 	}
+
+	private IEnumerator CheckNoCollision()
+    {
+        yield return new WaitForSeconds(noCollisionTimeout);
+
+        // Verifica se il blocco non ha ancora avuto collisioni
+        if (!hasCollided)
+        {
+            // Esegui le azioni necessarie quando il blocco non ha colpito niente
+            Debug.Log("Il blocco non ha colpito niente!");
+			contBlock++;
+			AutoPlacement autoPlacement = FindObjectOfType<AutoPlacement>();
+            // Segnala la fine del gioco tramite l'evento
+            autoPlacement.GameOver();
+        }
+    }
 
 	public void RemoveRigidbody()
 	{
@@ -84,6 +108,9 @@ public class Block : MonoBehaviour
 	
 	private void OnCollisionEnter(Collision collision)
 	{
+		AutoPlacement autoPlacement = FindObjectOfType<AutoPlacement>();
+		// Il blocco ha avuto una collisione
+        hasCollided = true;
 		if (state == State.Solid)
 		{
 			onOtherCollision.Invoke();
@@ -101,14 +128,19 @@ public class Block : MonoBehaviour
 			var otherController = otherBlock.ControllerBlock;
 			if (otherController != this)
 			{
-				Debug.Log("Fa il merge perchè blocchi diversi");
 				MergeWithOtherBlock(collision, otherController);
 				onImpact.Invoke();
+				if (autoPlacement != null)
+				{
+					Debug.Log("Ha colpito la torre, ora verifico");
+					StartCoroutine(autoPlacement.CheckTowerState());
+				}
 			}
-			else
-			{
-				Debug.Log("Blocchi uguali");
-			}
+		}
+		else
+		{
+			Debug.Log("Non hai colpito la torre hai perso");
+			autoPlacement.GameOver();
 		}
 	}
 

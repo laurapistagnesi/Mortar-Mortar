@@ -37,4 +37,9 @@ public class CountdownController : MonoBehaviour
         winPanel.SetActive(true);
     }
 
+    void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
 }
