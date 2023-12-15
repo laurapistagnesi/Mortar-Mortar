@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,15 +25,10 @@ public class AutoPlacement : MonoBehaviour
     private void Awake()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
-        ContaPezzi.OnGameOver += HandleGameOver;
-
     }
-   
-  
 
-    private void Update()
+    void Update()
     {
-        
         if (!torrePosizionata && aRRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hitList, TrackableType.PlaneWithinPolygon))
         {
             Pose hitPose = hitList[0].pose;
@@ -44,18 +40,16 @@ public class AutoPlacement : MonoBehaviour
                 GameObject torrePrefab = towers[Menu.currentTowerIndex];
                 torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
 
-                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2);
+                // Posiziona la torre a una certa distanza dal cannone
+                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
                 Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
 
-
-               
-                
                 torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
-                
-
+                torre.tag = "Torre";
 
                 torrePosizionata = true;
                 OnTowerPlaced?.Invoke();
+
             }
             else
             {
@@ -66,10 +60,12 @@ public class AutoPlacement : MonoBehaviour
 
     public void RestartTower()
     {
+        // Distruggi la torre istanziata se esiste
         if (torre != null)
         {
             Destroy(torre);
         }
+        // Reimposta il flag per consentire la posizione di una nuova torre
         torrePosizionata = false;
     }
 
