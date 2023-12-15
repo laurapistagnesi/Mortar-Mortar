@@ -3509,8 +3509,8 @@ MonoBehaviour:
   - {fileID: 7608622794980104711, guid: cd7c44bbe81d728439e30c8bd6acc298, type: 3}
   playerPivot: {fileID: 956721404}
   gameOverPanel: {fileID: 857573171}
-  countdownPanel: {fileID: 1618428549}
-  countdownDisplay: {fileID: 1825226816}
+  countdownPanel: {fileID: 1492042511}
+  countdownDisplay: {fileID: 1429898771}
 --- !u!1 &1705779833
 GameObject:
   m_ObjectHideFlags: 0

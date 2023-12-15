@@ -94,11 +94,8 @@ public class AutoPlacement : MonoBehaviour
                 {
                     Debug.Log("Hai perso");
                     gameOverPanel.SetActive(true);
-                    if((countdownDisplay!=null) && (countdownPanel!=null))
-                    {
-                        countdownPanel.SetActive(false);
-                        countdownDisplay.gameObject.SetActive(false);
-                    }
+                    countdownPanel.SetActive(false);
+                    countdownDisplay.gameObject.SetActive(false);
                 }
             }
         }
@@ -112,10 +109,7 @@ public class AutoPlacement : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
-        if((countdownDisplay!=null) && (countdownPanel!=null))
-        {
-            countdownPanel.SetActive(false);
-            countdownDisplay.gameObject.SetActive(false);
-        }
+        countdownPanel.SetActive(false);
+        countdownDisplay.gameObject.SetActive(false);
     }
 }

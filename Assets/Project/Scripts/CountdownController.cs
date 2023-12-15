@@ -39,7 +39,7 @@ public class CountdownController : MonoBehaviour
 
     void OnDisable()
     {
-        StopAllCoroutines();
+        StopCoroutine(CountdownToStart());
     }
 
 }
