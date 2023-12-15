@@ -1973,6 +1973,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992059285}
   m_CullTransparentMesh: 1
+--- !u!114 &1009147928 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2943934822729104700, guid: 2dae904dbe64c84448e42eb2fc274c00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5809041598031110966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1157052354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,6 +3523,9 @@ MonoBehaviour:
   gameOverPanel: {fileID: 857573171}
   countdownPanel: {fileID: 1492042511}
   countdownDisplay: {fileID: 1429898771}
+  radius: 5
+  power: 10
+  gameOverPanelText: {fileID: 1009147928}
 --- !u!1 &1705779833
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
+    [SerializeField] public TextMeshProUGUI gameOverPanelText;
 
     private void Awake()
     {
@@ -93,6 +94,7 @@ public class AutoPlacement : MonoBehaviour
                 if (speed > 0f)
                 {
                     Debug.Log("Hai perso");
+                    gameOverPanelText.text ="You lost, tower destroyed!";
                     gameOverPanel.SetActive(true);
                     countdownPanel.SetActive(false);
                     countdownDisplay.gameObject.SetActive(false);
@@ -109,6 +111,7 @@ public class AutoPlacement : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+        gameOverPanelText.text ="You lost, you must hit the tower!";
         countdownPanel.SetActive(false);
         countdownDisplay.gameObject.SetActive(false);
     }
