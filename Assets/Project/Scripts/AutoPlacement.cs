@@ -23,6 +23,7 @@ public class AutoPlacement : MonoBehaviour
     public TextMeshProUGUI countdownDisplay;
     [SerializeField] public TextMeshProUGUI gameOverPanelText;
     [SerializeField] public Explosion explosion;
+    [SerializeField] public TutorialManager tutorialManager;
 
     private void Awake()
     {
@@ -51,7 +52,10 @@ public class AutoPlacement : MonoBehaviour
 
                 torrePosizionata = true;
                 OnTowerPlaced?.Invoke();
-
+                if(Menu.currentTowerIndex == 0)
+                {
+                    tutorialManager.ShowCurrentPopup();
+                }
             }
             else
             {
