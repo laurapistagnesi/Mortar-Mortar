@@ -103,6 +103,7 @@ public class AutoPlacement : MonoBehaviour
                     Debug.Log("Hai perso");
                     gameOverPanelText.text ="You lost, tower destroyed!";
                     gameOverPanel.SetActive(true);
+                    Time.timeScale = 0f;
                     countdownPanel.SetActive(false);
                     countdownDisplay.gameObject.SetActive(false);
                 }
@@ -112,6 +113,7 @@ public class AutoPlacement : MonoBehaviour
         {
             Debug.LogError("Torre non trovata");
             gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
@@ -119,6 +121,7 @@ public class AutoPlacement : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         gameOverPanelText.text ="You lost, you must hit the tower!";
+        Time.timeScale = 0f;
         countdownPanel.SetActive(false);
         countdownDisplay.gameObject.SetActive(false);
     }
