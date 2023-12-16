@@ -22,6 +22,7 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
     [SerializeField] public TextMeshProUGUI gameOverPanelText;
+    [SerializeField] public Explosion explosion;
 
     private void Awake()
     {
@@ -93,6 +94,8 @@ public class AutoPlacement : MonoBehaviour
                 Debug.Log("speed " + speed);
                 if (speed > 0f)
                 {
+                    Vector3 position = blockRigidbody.position;
+                    explosion.Explode(position);
                     Debug.Log("Hai perso");
                     gameOverPanelText.text ="You lost, tower destroyed!";
                     gameOverPanel.SetActive(true);

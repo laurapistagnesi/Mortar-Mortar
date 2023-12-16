@@ -52,7 +52,7 @@ public class Block : MonoBehaviour
 	public Block ControllerBlock => controllerBlock;
 	
 	[SerializeField]
-    private float noCollisionTimeout = 2.0f; // Tempo massimo senza collisioni per considerare il blocco come non colpito
+    private float noCollisionTimeout = 4.0f; // Tempo massimo senza collisioni per considerare il blocco come non colpito
 
     private bool hasCollided = false;
 
