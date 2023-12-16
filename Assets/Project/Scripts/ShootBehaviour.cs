@@ -57,14 +57,6 @@ public class ShootBehaviour : MonoBehaviour
         if (canShoot)
         {
             panelWaiting.SetActive(false);
-            float yDirection = Input.GetAxis("Horizontal");
-            RotatePivot(yDirection);
-
-            UpdateShootInput();
-
-            lineBehaviour.SetActive(true);
-            UpdateProjectileDirection();
-
             if(isPressedRight)
             {
                 int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
@@ -85,6 +77,14 @@ public class ShootBehaviour : MonoBehaviour
                 }
                 pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*1.5f, 0.0f);
             }
+            
+            float yDirection = Input.GetAxis("Horizontal");
+            RotatePivot(yDirection);
+
+            UpdateShootInput();
+
+            lineBehaviour.SetActive(true);
+            UpdateProjectileDirection();
         }
     }
     private void OnTowerPlaced()
