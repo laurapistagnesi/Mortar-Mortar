@@ -6,6 +6,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using System.Collections;
 using TMPro;
+using System.Diagnostics.Tracing;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
@@ -22,11 +23,16 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
     [SerializeField] public TextMeshProUGUI gameOverPanelText;
+    private Vector3 playerPivotPosition; 
+  
+
 
     private void Awake()
     {
-        aRRaycastManager = GetComponent<ARRaycastManager>();
+       aRRaycastManager = GetComponent<ARRaycastManager>();
+        
     }
+
 
     void Update()
     {
@@ -34,30 +40,29 @@ public class AutoPlacement : MonoBehaviour
         {
             Pose hitPose = hitList[0].pose;
 
-            float distanzaDallaTelecamera = Vector3.Distance(Camera.main.transform.position, hitPose.position);
-
-            if (distanzaDallaTelecamera >= distanzaMinima)
+            if (Vector3.Distance(hitPose.position, Vector3.zero) >= 4f)
             {
                 GameObject torrePrefab = towers[Menu.currentTowerIndex];
-                torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
+                torrePrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
-                // Posiziona la torre a una certa distanza dal cannone
-                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
-                Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
-
-                torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
+                // Posiziona la torre sulla superficie rilevata
+                torre = Instantiate(torrePrefab, hitPose.position, Quaternion.identity);
                 torre.tag = "Torre";
 
                 torrePosizionata = true;
                 OnTowerPlaced?.Invoke();
-
             }
             else
             {
-                Debug.Log("La torre è troppo vicina alla camera.");
+                Debug.Log("Il piano rilevato è troppo vicino all'origine.");
             }
         }
+        else
+        {
+            Debug.Log("Nessun piano rilevato oppure la torre è già stata posizionata.");
+        }
     }
+
 
     public void RestartTower()
     {
