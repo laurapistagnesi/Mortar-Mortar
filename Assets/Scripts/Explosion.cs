@@ -6,9 +6,11 @@ using UnityEngine.Events;
 
 public class Explosion : MonoBehaviour
 {
+	//Raggio dell'esplosione
 	[SerializeField]
 	private float radius = 2.0f;
 
+	//Forza dell'esplosione
 	[SerializeField]
 	private float force = 1000f;
 
@@ -17,11 +19,13 @@ public class Explosion : MonoBehaviour
 	
 	[SerializeField]
 	private LayerMask affectedLayers = default;
-	
-	[SerializeField]
+
+    //Numero massimo di rigidbodies interessati dall'esplosione
+    [SerializeField]
 	private int maxAffectedRigidbodies = 30;
 
-	[SerializeField]
+    //Evento invocato al termine dell'esplosione
+    [SerializeField]
 	private UnityEvent onExplosion = null;
 	
 	private Collider[] colliders = null;
@@ -31,6 +35,7 @@ public class Explosion : MonoBehaviour
 		colliders = new Collider[maxAffectedRigidbodies];
 	}
 
+	//Realizza l'esplosione
 	[Button()]
 	public void Explode(Vector3 position)
 	{

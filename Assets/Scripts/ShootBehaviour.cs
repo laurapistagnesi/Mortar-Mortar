@@ -28,8 +28,8 @@ public class ShootBehaviour : MonoBehaviour
     private int currentBulletIndex = 0;
     private Quaternion cannonAdditionalRotation;
 
-    [SerializeField] private float force = 5f; // Forza di lancio
-    [SerializeField] private float swipeThreshold = 20f; // La soglia per considerare uno swipe
+    [SerializeField] private float force = 5f; //Forza di lancio
+    [SerializeField] private float swipeThreshold = 20f; //La soglia per considerare uno swipe
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
     [SerializeField] private bool canShoot = false;
@@ -37,7 +37,7 @@ public class ShootBehaviour : MonoBehaviour
     public TowerManager towerManager;
     [SerializeField] public TextMeshProUGUI remainingText;
     public float rotationSpeed = 5;
-    private List<GameObject> instantiatedBlocks = new List<GameObject>(); // Lista per tenere traccia degli oggetti istanziati
+    private List<GameObject> instantiatedBlocks = new List<GameObject>(); //Lista per tenere traccia degli oggetti istanziati
     [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
@@ -68,6 +68,7 @@ public class ShootBehaviour : MonoBehaviour
     {
         canShoot = true;
     }
+    //Aggiorna la direzione del proiettile sulla traiettoria
     private void UpdateProjectileDirection()
     {
         var localShootDirection = Quaternion.AngleAxis(shootAngle, Vector3.right);
@@ -76,11 +77,12 @@ public class ShootBehaviour : MonoBehaviour
         lineBehaviour.UpdateWithForce(localForce);
     }
 
+    //Aggiorna l'input per sparare
     private void UpdateShootInput()
     {
         if (loadingShot)
         {
-            // Verifica se il tocco è stato rilasciato
+            //Verifica se il tocco è stato rilasciato
             if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Ended))
             {
                 swipeEndPos = Input.GetTouch(0).position;
@@ -104,12 +106,12 @@ public class ShootBehaviour : MonoBehaviour
             return;
         }
 
-        // Esegui il raycast solo se il tocco è sulla torretta
+        //Esegue il raycast solo se il tocco è sulla torretta
         Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
         RaycastHit raycastHit;
         if ((Physics.Raycast(raycast, out raycastHit)) && (raycastHit.transform.name == "MortarMortar"))
         {
-            // Verifica se il tocco è attivo
+            //Verifica se il tocco è attivo
             if ((Input.touchCount>0) && (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary))
             {
                 loadingShot = true;
@@ -123,11 +125,13 @@ public class ShootBehaviour : MonoBehaviour
         }
     }
 
+    //Ruota il pivot della torretta
     void RotatePivot(float rotDirection)
     {
         pivotTransform.rotation *= Quaternion.Euler(0.0f, rotDirection * 1.5f, 0.0f);
     }
 
+    //Spara un oggetto
     void ShootObject()
     {
         List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
@@ -142,7 +146,7 @@ public class ShootBehaviour : MonoBehaviour
         bulletPrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        instantiatedBlocks.Add(instance); // Aggiungi l'oggetto alla lista
+        instantiatedBlocks.Add(instance); //Aggiunge l'oggetto alla lista
         var block = instance.GetComponent<Block>();       
         block.Shoot(shootDirection * force);
         currentBulletIndex++;
@@ -153,13 +157,14 @@ public class ShootBehaviour : MonoBehaviour
         audioManager.PlaySFX(audioManager.shoot); //Fa partire il suono dello sparo
     }
 
+    //Riavvia i proiettili
     public void RestartBullet()
     {
         foreach (var block in instantiatedBlocks)
         {
             Destroy(block);
         }
-        instantiatedBlocks.Clear(); // Pulisci la lista dopo la distruzione
+        instantiatedBlocks.Clear(); //Pulisce la lista dopo la distruzione
         List<GameObject> bulletList = towerManager.GetProjectilesForTower(Menu.currentTowerIndex);
         currentBulletIndex = 0;
         var remainingItems = Math.Max(0, bulletList.Count - currentBulletIndex);

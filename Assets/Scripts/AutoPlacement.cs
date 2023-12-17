@@ -7,22 +7,34 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 
+//Gestisce il piazzamento automatico della torre
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
 {
     public static event Action OnTowerPlaced;
+    //Gestore del raycast
     private ARRaycastManager aRRaycastManager;
-    private bool torrePosizionata = false;
-    [SerializeField] private GameObject[] towers;
-    [SerializeField] private GameObject playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
+    //Indica se la torre è piazzata o meno
+    private bool torrePosizionata = false;
+    //Lista delle torri disponibili
+    [SerializeField] private GameObject[] towers;
+    //Riferimento al mortaio
+    [SerializeField] private GameObject playerPivot;
+    //Riferimento alla torre
     private GameObject torre;
+
+    //Riferimenti ai pannelli del menù
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject countdownPanel;
     public TextMeshProUGUI countdownDisplay;
     [SerializeField] public TextMeshProUGUI gameOverPanelText;
+
+    //Riferimento all'esplosione
     [SerializeField] public Explosion explosion;
+    //Gestore dei popup relativi al tutorial
     [SerializeField] public TutorialManager tutorialManager;
+    //Distanza minima alla quale deve trovarsi la torre rispetto al mortaio
     private float distanzaMinima = 1.75f;
 
     private void Awake()
@@ -32,10 +44,12 @@ public class AutoPlacement : MonoBehaviour
 
     void Update()
     {
+        //Istanzia la torre attraverso il rilevamento di un piano orizzontale
         if (!torrePosizionata && aRRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hitList, TrackableType.PlaneWithinPolygon))
         {
             Pose hitPose = hitList[0].pose;
 
+            //Istanzia la torre corretta, posizionandola sul piano rilevato, e la scala
             GameObject torrePrefab = towers[Menu.currentTowerIndex];
             torrePrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             Vector3 towerPosition = hitPose.position + new Vector3(0, 0, 1.75f);
@@ -45,12 +59,14 @@ public class AutoPlacement : MonoBehaviour
             torrePosizionata = true;
             OnTowerPlaced?.Invoke();
 
+            //Si attivano dei popup nel caso in cui la torre selezionata sia quella relativa al tutorial
             if (Menu.currentTowerIndex == 0)
             {
                 tutorialManager.ShowCurrentPopup();
             }
         }
 
+        //Allontana la torre dal cannone nel caso in cui il giocatore, e di conseguenza il mortaio, si avvicina troppo (entro la soglia prestabilita di 1.75f)
         if (torrePosizionata)
         {
             float distanza = Vector3.Distance(playerPivot.transform.position, torre.transform.position);
@@ -63,17 +79,19 @@ public class AutoPlacement : MonoBehaviour
         }
     }
 
+    //Ricrea la torre
     public void RestartTower()
     {
-        // Distruggi la torre istanziata se esiste
+        //Distrugge la torre istanziata se già esiste
         if (torre != null)
         {
             Destroy(torre);
         }
-        // Reimposta il flag per consentire la posizione di una nuova torre
+        //Reimposta il flag in modo da consentire l'istanziazione di una nuova torre
         torrePosizionata = false;
     }
 
+    //Controlla lo stato della torre: se viene rilevato un movimento eccessivo dei blocchi che la compongono si ritiene la torre crollata, altrimenti la si ritiene intatta
     public IEnumerator CheckTowerState()
     {
         if (torre != null)
@@ -116,6 +134,7 @@ public class AutoPlacement : MonoBehaviour
         }
     }
 
+    //Genera la sconfitta, nel caso in cui il giocatore non colpisca la torre (condizione necessaria per considerare uno sparo valido)
     public void GameOver()
     {
         playerPivot.SetActive(false);

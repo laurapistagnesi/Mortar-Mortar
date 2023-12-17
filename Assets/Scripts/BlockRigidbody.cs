@@ -1,19 +1,10 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="InteractableLevelBox.cs" company="Supyrb">
-//   Copyright (c) 2020 Supyrb. All rights reserved.
-// </copyright>
-// <author>
-//   Johannes Deml
-//   public@deml.io
-// </author>
-// --------------------------------------------------------------------------------------------------------------------
-
 using System;
 using UnityEngine;
 
 namespace Supyrb
 {
 
+	//Gestisce il Rigidbody di un blocco
 	public class BlockRigidbody : MonoBehaviour
 	{
 		[SerializeField]
@@ -40,6 +31,7 @@ namespace Supyrb
 			}
 		}
 
+		//Rimuove il componente Rigidbody
 		public void RemoveRigidbody()
 		{
 			if (rb == null)
@@ -49,11 +41,11 @@ namespace Supyrb
 			Destroy(rb);
 		}
 		
+		//Resetta il componente Rigidbody
 		public void ResetRigidbody()
 		{
 			if (rb == null)
 			{
-				// Yes, we destroy the rigidbody sometimes :O
 				rb = gameObject.AddComponent<Rigidbody>();
 			}
 			rb.velocity = Vector3.zero;

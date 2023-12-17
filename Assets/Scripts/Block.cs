@@ -1,13 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Block.cs" company="Supyrb">
-//   Copyright (c) 2020 Supyrb. All rights reserved.
-// </copyright>
-// <author>
-//   Johannes Deml
-//   public@deml.io
-// </author>
-// --------------------------------------------------------------------------------------------------------------------
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,46 +8,55 @@ using UnityEngine.Events;
 
 public class Block : MonoBehaviour
 {
+	//Stati possibili per il blocco
 	public enum State
 	{
 		Sticky,
-		StickyCollided, // Still sticky, but only for a bit more
+		StickyCollided, //Ancora appiccicoso, ma solo per un po' di più
 		Solid
 	}
 
 	[SerializeField]
 	private BlockRigidbody blockRigidbody = null;
 
-	[SerializeField]
+    //Tempo durante il quale il blocco rimane appiccicoso dopo una collisione
+    [SerializeField]
 	private float stickyTimeAfterCollision = 0.2f;
 
+	//Stato attuale del blocco
 	[SerializeField]
 	private State state = State.Solid;
 
+	//Indica se il blocco è un elemento persistente nel livello
 	[SerializeField]
 	private bool persistentLevelElement = true;
 
+	//Evento chiamato al momento dell'impatto
 	[SerializeField]
 	private UnityEvent onImpact = null;
 
-	[SerializeField]
+    //Evento chiamato in caso di collisione con altri oggetti diversi da un blocco
+    [SerializeField]
 	private UnityEvent onOtherCollision = null;
 	
 	private SimpleTransform awakeTransform;
 	private Transform awakeParent;
-	//private RestartLevelSignal restartLevelSignal;
-	//private ToMenuSignal toMenuSignal;
+
 	private Block controllerBlock;
 
 	public Block ControllerBlock => controllerBlock;
-	
-	[SerializeField]
-    private float noCollisionTimeout = 4.0f; // Tempo massimo senza collisioni per considerare il blocco come non colpito
 
+    //Timeout massimo senza collisioni per considerare il blocco non colpito
+    [SerializeField]
+    private float noCollisionTimeout = 4.0f;
+
+    //Flag che indica se il blocco ha avuto collisioni
     private bool hasCollided = false;
 
-	private int contBlock = 0;
+    //Contatore di blocchi
+    private int contBlock = 0;
 
+	//Spara il blocco con una forza data
 	public void Shoot(Vector3 force)
 	{
 		blockRigidbody.Rb.AddForce(force, ForceMode.VelocityChange);
@@ -66,23 +65,25 @@ public class Block : MonoBehaviour
 		StartCoroutine(CheckNoCollision());
 	}
 
+	//Verifica se il blocco ha avuto collisioni
 	private IEnumerator CheckNoCollision()
     {
         yield return new WaitForSeconds(noCollisionTimeout);
 
-        // Verifica se il blocco non ha ancora avuto collisioni
+        //Verifica se il blocco non ha ancora avuto collisioni
         if (!hasCollided)
         {
-            // Esegui le azioni necessarie quando il blocco non ha colpito niente
+            //Esegue le azioni necessarie quando il blocco non ha colpito niente
             Debug.Log("Il blocco non ha colpito niente!");
 			contBlock++;
 			AutoPlacement autoPlacement = FindObjectOfType<AutoPlacement>();
-            // Segnala la fine del gioco tramite l'evento
+            //Segnala la fine del gioco tramite l'evento
             autoPlacement.GameOver();
         }
     }
 
-	public void RemoveRigidbody()
+    //Rimuove il componente Rigidbody dal blocco
+    public void RemoveRigidbody()
 	{
 		blockRigidbody.RemoveRigidbody();
 	}
@@ -92,24 +93,17 @@ public class Block : MonoBehaviour
 		controllerBlock = this;
 		awakeParent = transform.parent;
 		awakeTransform = transform.GetSimpleTransform(TransformType.Local);
-		
-		//Signals.Get(out restartLevelSignal);
-		//Signals.Get(out toMenuSignal);
-		
-		//restartLevelSignal.AddListener(OnRestartLevel);
-		//toMenuSignal.AddListener(OnRestartLevel);
 	}
 
 	private void OnDestroy()
 	{
-		//restartLevelSignal.RemoveListener(OnRestartLevel);
-		//toMenuSignal.RemoveListener(OnRestartLevel);
 	}
-	
-	private void OnCollisionEnter(Collision collision)
+
+    //Chiamato quando avviene una collisione con un altro oggetto
+    private void OnCollisionEnter(Collision collision)
 	{
 		AutoPlacement autoPlacement = FindObjectOfType<AutoPlacement>();
-		// Il blocco ha avuto una collisione
+		//Il blocco ha avuto una collisione
         hasCollided = true;
 		if (state == State.Solid)
 		{
@@ -117,17 +111,18 @@ public class Block : MonoBehaviour
 			return;
 		}
 		
+		//Se l'oggetto colliso è un blocco
 		if (collision.gameObject.TryGetComponent(out Block otherBlock))
 		{
 			if (state == State.Sticky)
 			{
-				//StartCoroutine(ChangeToSolid());
 				state = State.Solid;
 			}
 
 			var otherController = otherBlock.ControllerBlock;
 			if (otherController != this)
 			{
+				//Unisce il blocco corrente con l'altro blocco
 				MergeWithOtherBlock(collision, otherController);
 				onImpact.Invoke();
 				if (autoPlacement != null)
@@ -139,28 +134,32 @@ public class Block : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("Non hai colpito la torre hai perso");
+            //Se l'oggetto colliso non è un blocco, il gioco termina con una sconfitta
+            Debug.Log("Non hai colpito la torre hai perso");
 			autoPlacement.GameOver();
 		}
 	}
 
-	private void MergeWithOtherBlock(Collision collision, Block other)
+    //Unisce il blocco corrente con un altro blocco
+    private void MergeWithOtherBlock(Collision collision, Block other)
 	{
 		Debug.Log("MergeWithOtherBlock called");	
 		other.transform.parent = transform;
-		// Imposta la massa a zero prima di rimuovere il corpo rigido
+		//Imposta la massa a zero prima di rimuovere il corpo rigido
     	other.blockRigidbody.Rb.mass = 0f;
 		blockRigidbody.Rb.Merge(other.blockRigidbody.Rb);
 		other.RemoveRigidbody();
 	}
 
-	private IEnumerator ChangeToSolid()
+    //Cambia lo stato a solido dopo un certo periodo di tempo
+    private IEnumerator ChangeToSolid()
 	{
 		yield return new WaitForSeconds(stickyTimeAfterCollision);
 		state = State.Solid;
 	}
 
-	private void OnRestartLevel()
+    //Chiamato quando si vuole ristartare il livello
+    private void OnRestartLevel()
 	{
 		if (persistentLevelElement)
 		{

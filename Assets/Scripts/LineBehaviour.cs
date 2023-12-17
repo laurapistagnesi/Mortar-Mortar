@@ -6,9 +6,11 @@ public class LineBehaviour : MonoBehaviour
     [SerializeField]
     private LineRenderer lineRenderer = null;
 
+    //Tempo totale simulato per la traiettoria del proiettile
     [SerializeField]
     private float totalSimulatedTime = 1.0f;
 
+    //Numero massimo di punti sulla traiettoria
     [SerializeField, Min(1)]
     private int maxPoints = 2;
 
@@ -36,6 +38,7 @@ public class LineBehaviour : MonoBehaviour
         impactTransform.gameObject.SetActive(active);
     }
     
+    //Aggiorna la traiettoria del proiettile con una forza data
     public void UpdateWithForce(Vector3 force)
     {
         lineRenderer.positionCount = maxPoints;
@@ -52,12 +55,10 @@ public class LineBehaviour : MonoBehaviour
             ray.direction = lastNextVector.normalized;
             var length = lastNextVector.magnitude;
             
-            // Debug.DrawRay(ray.origin, (ray.direction * length), Color.green, 0.1f);
             var hitCount = Physics.RaycastNonAlloc(ray, hits, length, layerMask, QueryTriggerInteraction.Ignore);
             if (hitCount > 0)
             {
                 var hit = hits[0];
-                // identifica l'oggetto con  tag "torre"
                 if (hit.transform.CompareTag("Torre")) 
                 {
                     var hitPosition = Quaternion.Inverse(transform.rotation) * (hit.point - transform.position);
@@ -79,12 +80,14 @@ public class LineBehaviour : MonoBehaviour
         impactTransform.gameObject.SetActive(false);
     }
 
+    //Posiziona l'oggetto di impatto nel punto di collisione
     private void PositionCollisionGizmo(RaycastHit hit)
     {
         impactTransform.gameObject.SetActive(true);
         impactTransform.position = hit.point;
     }
 
+    //Calcola la posizione di un punto sulla traiettoria del proiettile
     public Vector3 ProjectileMotion(Vector3 force, float timeToDistance){        
         Vector3 position = force * timeToDistance + Physics.gravity * (0.5f * timeToDistance * timeToDistance);
         return position;

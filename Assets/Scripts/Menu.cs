@@ -8,29 +8,33 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    //Torri disponibili nel menù
     [SerializeField] private GameObject[] towers;
+    //Indice della torre corrente
     public static int currentTowerIndex = 0;
 
+    //Testo per mostrare il nome della torre corrente
     [SerializeField] private TMP_Text level;
 
     public void OnEnable()
     {
-        //Attiva la prima torre
+        //Attiva la prima torre e disattiva le altre
         currentTowerIndex = 0;
         towers[currentTowerIndex].SetActive(true);
 
-        //Disattiva tutte le torri, eccetto quella iniziale
         for (int i = 1; i < towers.Length; i++)
         {
             towers[i].SetActive(false);
         }
     }
 
+    //Avvia il gioco
     public void onPlayButton()
     {
         SceneManager.LoadScene(1);
     }
 
+    //Cambia la torre corrente con quella precedente
     public void onPreviousButton()
     {
         towers[currentTowerIndex].SetActive(false);
@@ -44,6 +48,7 @@ public class Menu : MonoBehaviour
         setLevelName(currentTowerIndex);
     }
 
+    //Cambia la torre corrente con quella successiva
     public void onNextButton()
     {
         towers[currentTowerIndex].SetActive(false);
@@ -52,7 +57,7 @@ public class Menu : MonoBehaviour
         setLevelName(currentTowerIndex);
     }
 
-    //Modifica il nome del livello
+    //Modifica il testo in base al nome della torre corrente
     public void setLevelName(int index)
     {
         switch (index)
