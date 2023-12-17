@@ -8,3 +8,10 @@ Inizialmente è possibile selezionare una torre, tra le diverse disponibili, da 
 
 https://github.com/laurapistagnesi/Mortar-Mortar/assets/49392902/a8b365fe-a691-479f-8e40-1ba9fed30092
 
+
+## Autori
+[Laura Pistagnesi](https://github.com/laurapistagnesi)
+
+[Dediu Alexandru](https://github.com/alexxdediu?tab=repositories)
+
+[Regy Cekarri](https://github.com/regycekerri)
