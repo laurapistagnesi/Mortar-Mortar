@@ -21,8 +21,7 @@ public class ShootBehaviour : MonoBehaviour
     private UnityEvent onShoot = null;
 
     public Transform pivotTransform;
-    [SerializeField]
-    public LineBehaviour lineBehaviour;
+    [SerializeField] public LineBehaviour lineBehaviour;
     private float shootAngle;
     private bool loadingShot;
     private float loadingShotStartTime;
@@ -38,8 +37,6 @@ public class ShootBehaviour : MonoBehaviour
     public TowerManager towerManager;
     [SerializeField] public TextMeshProUGUI remainingText;
     public float rotationSpeed = 5;
-    bool isPressedRight;
-    bool isPressedLeft;
     private List<GameObject> instantiatedBlocks = new List<GameObject>(); // Lista per tenere traccia degli oggetti istanziati
     [SerializeField] AudioManager audioManager; //Oggetto che fa riferimento al gestore dell'audio
     [SerializeField] GameObject countdownPanel;
@@ -57,26 +54,6 @@ public class ShootBehaviour : MonoBehaviour
         if (canShoot)
         {
             panelWaiting.SetActive(false);
-            if(isPressedRight)
-            {
-                int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-                if ((16f < yRotation) && (yRotation < 350f))
-                {
-                    return;
-                }
-                pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*(-1.5f), 0.0f);
-
-            }
-
-            if(isPressedLeft)
-            {
-                int yRotation = Mathf.RoundToInt(pivotTransform.rotation.eulerAngles.y);
-                if ((15f < yRotation) && (yRotation < 349f))
-                {
-                    return;
-                }
-                pivotTransform.rotation *= Quaternion.Euler(0.0f, rotationSpeed * Time.deltaTime*1.5f, 0.0f);
-            }
             
             float yDirection = Input.GetAxis("Horizontal");
             RotatePivot(yDirection);
@@ -157,10 +134,12 @@ public class ShootBehaviour : MonoBehaviour
         if (((currentBulletIndex+1) >= bulletList.Count) || (currentBulletIndex >= bulletList.Count))
         {
             canShoot = false;
+            pivotTransform.gameObject.SetActive(false);
             countdownPanel.SetActive(true);
             countdownDisplay.gameObject.SetActive(true);
         }
         var bulletPrefab = bulletList[currentBulletIndex];
+        bulletPrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         var shootDirection = Quaternion.AngleAxis(shootAngle, transform.right)* transform.forward;
         var instance = Instantiate(bulletPrefab, transform.position, transform.rotation);
         instantiatedBlocks.Add(instance); // Aggiungi l'oggetto alla lista
@@ -172,16 +151,6 @@ public class ShootBehaviour : MonoBehaviour
         remainingText.text = "Remaining Bullet: " + remainingItems.ToString();
 
         audioManager.PlaySFX(audioManager.shoot); //Fa partire il suono dello sparo
-    }
-
-    public void TogglePressedRight(bool value)
-    {
-        isPressedRight = value;
-    }
-
-    public void TogglePressedLeft(bool value)
-    {
-        isPressedLeft = value;
     }
 
     public void RestartBullet()

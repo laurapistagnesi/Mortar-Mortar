@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,8 +13,7 @@ public class AutoPlacement : MonoBehaviour
     private ARRaycastManager aRRaycastManager;
     private bool torrePosizionata = false;
     [SerializeField] private GameObject[] towers;
-    private float distanzaMinima = 0.5f;
-    [SerializeField] private Transform playerPivot;
+    [SerializeField] private GameObject playerPivot;
     static List<ARRaycastHit> hitList = new List<ARRaycastHit>();
     private GameObject torre;
     [SerializeField] GameObject gameOverPanel;
@@ -36,30 +34,18 @@ public class AutoPlacement : MonoBehaviour
         {
             Pose hitPose = hitList[0].pose;
 
-            float distanzaDallaTelecamera = Vector3.Distance(Camera.main.transform.position, hitPose.position);
+            GameObject torrePrefab = towers[Menu.currentTowerIndex];
+            torrePrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            Vector3 towerPosition = hitPose.position + new Vector3(0, 0, 1f);
 
-            if (distanzaDallaTelecamera >= distanzaMinima)
+            torre = Instantiate(torrePrefab, towerPosition, Quaternion.identity);
+            torre.tag = "Torre";
+            torrePosizionata = true;
+            OnTowerPlaced?.Invoke();
+
+            if (Menu.currentTowerIndex == 0)
             {
-                GameObject torrePrefab = towers[Menu.currentTowerIndex];
-                torrePrefab.transform.localScale = new Vector3(1f, 1f, 1f);
-
-                // Posiziona la torre a una certa distanza dal cannone
-                Vector3 offsetFromPlayerPivot = new Vector3(0, 2, 2); 
-                Vector3 torrePosition = playerPivot.position + offsetFromPlayerPivot;
-
-                torre = Instantiate(torrePrefab, torrePosition, Quaternion.identity);
-                torre.tag = "Torre";
-
-                torrePosizionata = true;
-                OnTowerPlaced?.Invoke();
-                if(Menu.currentTowerIndex == 0)
-                {
-                    tutorialManager.ShowCurrentPopup();
-                }
-            }
-            else
-            {
-                Debug.Log("La torre è troppo vicina alla camera.");
+                tutorialManager.ShowCurrentPopup();
             }
         }
     }
@@ -101,6 +87,7 @@ public class AutoPlacement : MonoBehaviour
                     Vector3 position = blockRigidbody.position;
                     explosion.Explode(position);
                     Debug.Log("Hai perso");
+                    playerPivot.SetActive(false);
                     gameOverPanelText.text ="You lost, tower destroyed!";
                     gameOverPanel.SetActive(true);
                     Time.timeScale = 0f;
@@ -112,6 +99,7 @@ public class AutoPlacement : MonoBehaviour
         else
         {
             Debug.LogError("Torre non trovata");
+            playerPivot.SetActive(false);
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -119,8 +107,9 @@ public class AutoPlacement : MonoBehaviour
 
     public void GameOver()
     {
+        playerPivot.SetActive(false);
+        gameOverPanelText.text = "You lost, you must hit the tower!";
         gameOverPanel.SetActive(true);
-        gameOverPanelText.text ="You lost, you must hit the tower!";
         Time.timeScale = 0f;
         countdownPanel.SetActive(false);
         countdownDisplay.gameObject.SetActive(false);

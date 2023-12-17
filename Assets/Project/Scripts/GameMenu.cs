@@ -8,13 +8,16 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject gameMenu;
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject winPanel;
+    [SerializeField] GameObject playerPivot;
     public ShootBehaviour newBullet;
     public AutoPlacement autoPlacement;
 
     public void Resume()
     {
-        //Si disattiva il men�
+        //Si disattiva il menù
         gameMenu.SetActive(false);
+        //Si riattiva il cannone
+        playerPivot.SetActive(true);
         //Il gioco riprende 
         Time.timeScale = 1f;
     }
@@ -22,6 +25,8 @@ public class GameMenu : MonoBehaviour
     {
         //Si attiva il menù
         gameMenu.SetActive(true);
+        //Si disattiva il cannone
+        playerPivot.SetActive(false);
         //Il gioco viene messo in pausa 
         Time.timeScale = 0f;
     }
@@ -37,6 +42,8 @@ public class GameMenu : MonoBehaviour
         gameMenu.SetActive(false);
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
+        //Si riattiva il cannone
+        playerPivot.SetActive(true);
         //Il gioco riprende 
         Time.timeScale = 1f;
         newBullet.RestartBullet();
