@@ -10,7 +10,7 @@ public class LineBehaviour : MonoBehaviour
     private float totalSimulatedTime = 1.0f;
 
     [SerializeField, Min(1)]
-    private int maxPoints = 15;
+    private int maxPoints = 2;
 
     [SerializeField]
     private LayerMask layerMask = default;

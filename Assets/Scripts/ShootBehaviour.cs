@@ -28,8 +28,8 @@ public class ShootBehaviour : MonoBehaviour
     private int currentBulletIndex = 0;
     private Quaternion cannonAdditionalRotation;
 
-    [SerializeField] private float force = 20.0f; // Forza di lancio
-    [SerializeField] private float swipeThreshold = 10.0f; // La soglia per considerare uno swipe
+    [SerializeField] private float force = 5f; // Forza di lancio
+    [SerializeField] private float swipeThreshold = 20f; // La soglia per considerare uno swipe
     private Vector3 swipeStartPos;
     private Vector3 swipeEndPos;
     [SerializeField] private bool canShoot = false;
