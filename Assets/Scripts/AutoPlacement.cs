@@ -5,6 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class AutoPlacement : MonoBehaviour
@@ -22,6 +23,7 @@ public class AutoPlacement : MonoBehaviour
     [SerializeField] public TextMeshProUGUI gameOverPanelText;
     [SerializeField] public Explosion explosion;
     [SerializeField] public TutorialManager tutorialManager;
+    private float distanzaMinima = 1.75f;
 
     private void Awake()
     {
@@ -36,7 +38,7 @@ public class AutoPlacement : MonoBehaviour
 
             GameObject torrePrefab = towers[Menu.currentTowerIndex];
             torrePrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-            Vector3 towerPosition = hitPose.position + new Vector3(0, 0, 1f);
+            Vector3 towerPosition = hitPose.position + new Vector3(0, 0, 1.75f);
 
             torre = Instantiate(torrePrefab, towerPosition, Quaternion.identity);
             torre.tag = "Torre";
@@ -46,6 +48,17 @@ public class AutoPlacement : MonoBehaviour
             if (Menu.currentTowerIndex == 0)
             {
                 tutorialManager.ShowCurrentPopup();
+            }
+        }
+
+        if (torrePosizionata)
+        {
+            float distanza = Vector3.Distance(playerPivot.transform.position, torre.transform.position);
+
+            if (distanza < distanzaMinima)
+            {
+                Vector3 direzione = (playerPivot.transform.position - torre.transform.position).normalized;
+                torre.transform.position -= direzione * 1f;
             }
         }
     }
@@ -88,7 +101,7 @@ public class AutoPlacement : MonoBehaviour
                     explosion.Explode(position);
                     Debug.Log("Hai perso");
                     playerPivot.SetActive(false);
-                    gameOverPanelText.text ="You lost, tower destroyed!";
+                    gameOverPanelText.text = "You lost, tower destroyed!";
                     gameOverPanel.SetActive(true);
                     countdownPanel.SetActive(false);
                     countdownDisplay.gameObject.SetActive(false);
